@@ -1,5 +1,10 @@
 @charset "utf-8";
 @import url("font.css");
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+.notosanskr * {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -119,16 +124,118 @@ header{
 
 
 
+.inner {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+
 /* 지원 */
 /* 베스트 */
 .best {
   width: 100%;
 }
-.inner {
-  width: 90%;
-  max-width: 1200px;
-}
 .best h2 {
   font-family: "TheJamsil5Bold";
-  font-size: 200px;
+  font-size: 70px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.best-button {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.best-button li a {
+  display: flex;
+  font-family: "Noto Sans KR", sans-serif;
+  color: orange;
+  border: 2px solid orange;
+  border-radius: 30px;
+  width: 100px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+.best-button li:first-child a {
+  filter: brightness(0.1);
+}
+.best-fruits {
+  display: flex;
+  width: 100%;
+  height: 400px;
+}
+.best-fruits li {
+  width: calc(100% / 4);
+  gap: 20px;
+  position: relative;
+}
+.best-img img:first-child {
+  width: 100%;
+  height: 80%;
+  max-width: 270px;
+  max-height: 270px;
+}
+.best-img img:last-child {
+  position: absolute;
+  bottom: 140px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+}
+.best-fruits li h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 10px 0;
+}
+.best-price {
+  display: flex;
+  gap: 30px;
+}
+.best-price p:first-child {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 24px;
+}
+.best-new {
+  font-family: "Noto Sans KR", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 188, 0);
+  width: 50px;
+  height: 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+}
+.best-recommend {
+  font-family: "Noto Sans KR", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 172, 37);
+  width: 50px;
+  height: 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+}
+.best-more {
+  font-family: "Noto Sans KR", sans-serif;
+  display: block;
+  width: 250px;
+  height: 80px;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 3px solid #444;
+  margin: 50px auto;
+}
+.brand_story {
 }
