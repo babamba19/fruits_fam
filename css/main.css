@@ -15,7 +15,13 @@ a{
   color: black;
 }
 /* 공통 */
-.wrap{}
+.inner {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
 /* 태훈 */
 /* header */
 header{
@@ -120,18 +126,11 @@ header{
   width: 100%;
   height: 100%;
 }
+/* 오늘의 도시락 */
 
 
 
 
-.inner {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-a {
-  text-decoration: none;
-}
 
 /* 지원 */
 /* 베스트 */
