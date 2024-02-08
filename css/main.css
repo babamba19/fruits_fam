@@ -17,7 +17,7 @@ a {
 /* 공통 */
 .inner {
   width: 90%;
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -27,7 +27,7 @@ header {
   width: 100%;
 
   height: 345px;
-position: fixed;
+  position: fixed;
   display: block;
   top: 0;
   left: 0;
@@ -81,15 +81,14 @@ position: fixed;
   height: 40px;
 }
 
-.header-bottom{
+.header-bottom {
   width: 100%;
   height: 115px;
   display: block;
   z-index: 99999;
   background-color: #fff;
-  
 }
-.main-menu{
+.main-menu {
   font-family: "Noto Sans KR", sans-serif;
 
   position: relative;
@@ -119,94 +118,92 @@ position: fixed;
   background-color: aqua;
 }
 
-.slide-img1{
-  background: url("../images/longbanner-sul1.png")no-repeat center;
+.slide-img1 {
+  background: url("../images/longbanner-sul1.png") no-repeat center;
   width: 100%;
   height: 100%;
 }
-.slide-img2{
-  background: url("../images/longbanner-dosirak.png")no-repeat center;
+.slide-img2 {
+  background: url("../images/longbanner-dosirak.png") no-repeat center;
   width: 100%;
   height: 100%;
 }
-.slide-img3{
-  background: url("../images/longbanner-manggo.png")no-repeat center;
+.slide-img3 {
+  background: url("../images/longbanner-manggo.png") no-repeat center;
   width: 100%;
   height: 100%;
 }
-.slide-img4{
-  background: url("../images/longbanner-tomato.png")no-repeat center;
+.slide-img4 {
+  background: url("../images/longbanner-tomato.png") no-repeat center;
 
   width: 100%;
   height: 100%;
 }
 /* 오늘의 도시락 */
 
-.today{
+.today {
   width: 100%;
   height: 712px;
   padding: 50px;
 }
-.today h1{
+.today h1 {
   font-family: "TheJamsil5Bold";
   font-size: 70px;
   font-weight: 400;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.today-menu{
-font-family: "Noto Sans KR", sans-serif;
-width: 100%;
-height: 288px;
-display: flex;
-justify-content: space-around;
-text-align: center;
-line-height: 40px;
-font-size: 20px;
-font-weight: 600;
+.today-menu {
+  font-family: "Noto Sans KR", sans-serif;
+  width: 100%;
+  height: 288px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 600;
 }
-.today-menu li img{
-width: 230px;
-height: 230px;
-border: 1px solid #d9d9d9;
-border-radius: 50%;
+.today-menu li img {
+  width: 230px;
+  height: 230px;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
 }
-.today-bt{
+.today-bt {
   width: 600px;
   text-align: center;
   display: flex;
   margin: 0 auto;
-  
 }
-.today-bt-left{
+.today-bt-left {
   font-family: "Noto Sans KR", sans-serif;
-    display: block;
-    width: 250px;
-    height: 80px;
-    font-size: 28px;
-    font-weight: bold;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
-    border: 3px solid rgb(68, 68, 68);
-    margin: 50px auto;
-    line-height: 70px;
-    cursor: pointer;
+  display: block;
+  width: 250px;
+  height: 80px;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  border: 3px solid rgb(68, 68, 68);
+  margin: 50px auto;
+  line-height: 70px;
+  cursor: pointer;
 }
-.today-bt-right{
+.today-bt-right {
   font-family: "Noto Sans KR", sans-serif;
-    display: block;
-    width: 250px;
-    height: 80px;
-    font-size: 28px;
-    font-weight: bold;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
-    border: 3px solid rgb(68, 68, 68);
-    margin: 50px auto;
-    line-height: 70px;
-    cursor: pointer;
+  display: block;
+  width: 250px;
+  height: 80px;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  border: 3px solid rgb(68, 68, 68);
+  margin: 50px auto;
+  line-height: 70px;
+  cursor: pointer;
 }
-
 
 /* 지원 */
 /* 베스트 */
