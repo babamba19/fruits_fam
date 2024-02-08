@@ -10,23 +10,22 @@
   padding: 0;
   box-sizing: border-box;
 }
-a{
+a {
   text-decoration: none;
   color: black;
 }
 /* 공통 */
 .inner {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
-
 /* 태훈 */
 /* header */
-header{
+header {
   width: 100%;
-  
+
   position: fixed;
   display: block;
   top: 0;
@@ -34,8 +33,7 @@ header{
   background-color: rgb(224, 74, 74);
   z-index: 99999;
 }
-.header-top{
- 
+.header-top {
   width: 100%;
   height: 228px;
   /* background-color: aqua; */
@@ -44,18 +42,18 @@ header{
   justify-content: space-around;
   align-items: center;
 }
-.header-search{
+.header-search {
   width: 246px;
   height: 30px;
   position: relative;
   /* background-color: antiquewhite; */
 }
-.search-text{
+.search-text {
   border: none;
   border-bottom: 1px solid black;
   outline: none;
 }
-.search-bt{
+.search-bt {
   background: url("../images/search.png") no-repeat center;
   width: 18px;
   height: 18px;
@@ -63,30 +61,29 @@ header{
   border: none;
   cursor: pointer;
 }
-.header-menu-icon{
+.header-menu-icon {
   position: relative;
   display: flex;
   width: 150px;
   justify-content: space-around;
   cursor: pointer;
 }
-.user{
-  background: url("../images/user-alt.png")no-repeat center;
+.user {
+  background: url("../images/user-alt.png") no-repeat center;
   width: 40px;
   height: 40px;
 }
-.basket{
-  background: url("../images/shopping-basket.png")no-repeat center;
+.basket {
+  background: url("../images/shopping-basket.png") no-repeat center;
   width: 40px;
   height: 40px;
 }
-.header-bottom{
+.header-bottom {
   position: relative;
   width: 100%;
   height: 115px;
-  
 }
-.main-menu{
+.main-menu {
   position: relative;
   display: flex;
   justify-content: space-evenly;
@@ -97,47 +94,43 @@ header{
   padding-top: 40px;
   line-height: 22px;
 }
-.fa-bars{
+.fa-bars {
   margin-right: 10px;
 }
 /* 이미지 슬라이드 */
-.banner{
+.banner {
   position: relative;
   width: 100%;
   height: 100%;
-  margin-top:calc(228px + 115px);
+  margin-top: calc(228px + 115px);
 }
-.swiper-slide{
+.swiper-slide {
   /* top: 600px; */
   width: 100%;
   height: 600px;
   background-color: aqua;
 }
-.slide-img1{
-  background: url("../images/banner-1.png")no-repeat center;
+.slide-img1 {
+  background: url("../images/banner-1.png") no-repeat center;
   width: 100%;
   height: 100%;
 }
-.slide-img2{
-  background: url("../images/banner-dosirak.png")no-repeat center;
+.slide-img2 {
+  background: url("../images/banner-dosirak.png") no-repeat center;
   width: 100%;
   height: 100%;
 }
-.slide-img3{
-  background: url("../images/banner-manggo.png")no-repeat center;
+.slide-img3 {
+  background: url("../images/banner-manggo.png") no-repeat center;
   width: 100%;
   height: 100%;
 }
-.slide-img4{
-  background: url("../images/banner-tomato.png")no-repeat center;
+.slide-img4 {
+  background: url("../images/banner-tomato.png") no-repeat center;
   width: 100%;
   height: 100%;
 }
 /* 오늘의 도시락 */
-
-
-
-
 
 /* 지원 */
 /* 베스트 */
@@ -172,40 +165,42 @@ header{
 }
 .best-fruits {
   display: flex;
+  justify-content: space-between;
   width: 100%;
+  max-width: 1440px;
   height: 400px;
 }
 .best-fruits li {
-  width: calc(100% / 4);
-  gap: 20px;
   position: relative;
 }
 .best-img img:first-child {
   width: 100%;
   height: 80%;
-  max-width: 270px;
-  max-height: 270px;
+  max-width: 400px;
+  max-height: 400px;
 }
 .best-img img:last-child {
   position: absolute;
-  bottom: 140px;
-  right: 40px;
-  width: 40px;
-  height: 40px;
+  top: 10px;
+  right: 10px;
+  width: 35px;
+  height: 35px;
+  opacity: 0.8;
 }
 .best-fruits li h3 {
   font-family: "Noto Sans KR", sans-serif;
-  font-weight: bold;
-  font-size: 24px;
-  margin: 10px 0;
+  font-size: 26px;
+  margin: 25px 0 15px 10px;
 }
 .best-price {
   display: flex;
   gap: 30px;
 }
 .best-price p:first-child {
+  margin-left: 10px;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 24px;
+  font-weight: bold;
 }
 .best-new {
   font-family: "Noto Sans KR", sans-serif;
@@ -241,8 +236,87 @@ header{
   background-color: #fff;
   border-radius: 20px;
   border: 3px solid #444;
-  margin: 50px auto;
+  margin: 100px auto;
 }
 .brand_story {
-  
+  margin-top: 200px;
+  position: relative;
+}
+.brand_story .inner {
+  width: 100%;
+  height: 250px;
+  background: url("../images/banner-brand.jpg") no-repeat center center;
+}
+.brand_story p {
+  display: flex;
+  justify-content: center;
+}
+.brand_story p a {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  position: absolute;
+  bottom: 20px;
+  left: 47.2%;
+  width: 110px;
+  line-height: 25px;
+  color: #c9c9c9;
+  border: 1px solid #c9c9c9;
+  border-radius: 10px;
+  text-align: center;
+}
+.new {
+  margin-top: 200px;
+}
+.new h2 {
+  font-family: "TheJamsil5Bold";
+  font-size: 70px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.new-fruits {
+  width: 100%;
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.new-fruits li {
+  position: relative;
+}
+.new-img img:first-child {
+  width: 100%;
+  max-width: 450px;
+  max-heith: 400px;
+}
+.new-img img:last-child {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  width: 35px;
+  height: 35px;
+  opacity: 0.8;
+}
+.new-fruits li h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 26px;
+  margin: 25px 0 15px 10px;
+}
+.new-price {
+  display: flex;
+  gap: 20px;
+  margin-left: 10px;
+}
+.new-price p:nth-child(1) {
+  color: rgb(255, 95, 67);
+  font-size: 26px;
+  font-weight: bold;
+}
+.new-price p:nth-child(2) {
+  font-size: 26px;
+  font-weight: bold;
+}
+.new-price p:nth-child(3) {
+  color: rgb(100, 100, 100);
+  font-size: 20px;
+  text-decoration: line-through;
 }
