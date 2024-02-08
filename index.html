@@ -76,7 +76,7 @@
       </div> -->
       <!-- 상단 -->
       <header >
-       
+       <div class="inner">
         <div class="header-top">
           <form action="#" class="header-search">
             <input
@@ -117,6 +117,8 @@
             </li>
           </ul>
         </div>
+       </div>
+        
       </header>
       <!-- 이미지 슬라이드 -->
       <div class="banner">
@@ -135,44 +137,28 @@
               <div class="slide-img4"></div>
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
           <div class="swiper-pagination"></div>
         </div>
       </div>
-      <!-- Initialize Swiper -->
-      <script>
-        var swiper = new Swiper(".sw-banner", {
-          cssMode: true,
-          slidesPerView: 1,
-          spaceBetween: 20,
-          loop: true,
-          autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          mousewheel: true,
-          keyboard: true,
-        });
-      </script>
       <!-- 오늘의 도시락 -->
       <section class="today">
-        <h1>오늘의 도시락 Pick!</h1>
+        <div class="inner">
+          <h1>오늘의 도시락 Pick!</h1>
         <ul class="today-menu">
-          <li>사과</li>
-          <li>오렌지</li>
-          <li>바나나</li>
-          <li>멜론</li>
-          <li>망고</li>
+          <li><a href="#"><img src="images/apple.jpg" alt="사과"></a><p>사과</p></li>
+          <li><a href="#"><img src="images/orange.jpg" alt="오렌지"></a><p>오렌지</p></li>
+          <li><a href="#"><img src="images/banana.jpg" alt="바나나"></a><p>바나나</p></li>
+          <li><a href="#"><img src="images/melon.jpg" alt="멜론"></a><p>멜론</p></li>
+          <li><a href="#"><img src="images/mango.jpg" alt="망고"></a><p>망고</p></li>
         </ul>
+        <div class="today-bt">
+          <div class="today-bt-left">주문하기</div>
+          <div class="today-bt-right">골라서 주문하기</div>
+        </div>
+        </div>
+        
       </section>
       <!-- BEST -->
       <section class="best">
