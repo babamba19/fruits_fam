@@ -46,19 +46,22 @@ header {
   /* background-color: aqua; */
   position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .header-search {
-  width: 246px;
+  width: 230px;
   height: 30px;
   position: relative;
   /* background-color: antiquewhite; */
 }
 .search-text {
+  width: 100%;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #d9d9d9;
   outline: none;
+  color: #d9d9d9;
+  font-size: 20px;
 }
 .search-bt {
   background: url("../images/search.png") no-repeat center;
@@ -94,7 +97,7 @@ header {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: hsl(108, 100%, 82%);
+  /* background-color: hsl(108, 100%, 82%); */
 }
 .main-menu {
   width: 1200px;
@@ -153,7 +156,7 @@ header {
 .today {
   width: 100%;
   height: 600px;
-  /* padding: 50px; */
+  margin-top: 70px;
   /* background-color: bisque; */
 }
 .today h1 {
@@ -212,13 +215,13 @@ header {
 }
 .today-bt button {
   width: 250px;
-  font-size: 20px;
+  height: 80px;
+  font-size: 28px;
   font-weight: bold;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   border-radius: 20px;
-  border: 1px solid rgb(68, 68, 68);
+  border: 3px solid #222;
   margin: 0px 15px;
-  line-height: 65px;
   cursor: pointer;
   color: #222;
   gap: 30px;
@@ -227,31 +230,43 @@ header {
 /* top 버튼 */
 .top-button{
 }
+
 .kakao{
-  background: url("../images/kakao.png");
-  width: 79px;
-  height: 79px;
+  background: url("../images/kakao.png")no-repeat center;
+  width: 69px;
+  height: 69px;
   position: fixed;
   z-index: 99999;
-  bottom: 200px;
-  right: 20px;
-  cursor: pointer;
-}
-#topBtn-up {
-  width: 79px;
-  height: 79px;
-  position: fixed; /* 페이지 스크롤과 함께 고정되도록 설정합니다. */
-  bottom: 20px;
-  right: 20px;
   border: 0;
-  z-index: 99999; /* 다른 요소 위에 표시될 수 있도록 z-index를 설정합니다. */
-  background: url("../images/up.png")no-repeat center;
+  bottom: 190px;
+  right: 20px;
   background-size: cover;
   cursor: pointer;
 }
-
-
-
+.insta{
+  background: url("../images/insta.png")no-repeat center;
+  width: 69px;
+  height: 69px;
+  position: fixed;
+  z-index: 99999;
+  border: 0;
+  bottom: 110px;
+  right: 20px;
+  background-size: cover;
+  cursor: pointer;
+}
+#topBtn-up {
+  background: url("../images/up.png")no-repeat center;
+  width: 69px;
+  height: 69px;
+  position: fixed;
+  z-index: 99999;
+  border: 0;
+  bottom: 30px;
+  right: 20px;
+  background-size: cover;
+  cursor: pointer;
+}
 
 /* 지원 */
 /* 베스트 */
