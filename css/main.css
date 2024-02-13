@@ -122,35 +122,18 @@ header {
   width: 100%;
   height: 100%;
   margin-top: 260px;
+ text-align: center;
 }
 .swiper-slide {
   /* top: 600px; */
   width: 100%;
-  height: 600px;
-  background-color: aqua;
+  height: 100%;
+  
+}
+.swiper-slide img{
+  
 }
 
-.slide-img1 {
-  background: url("../images/longbanner-sul1.png") no-repeat center;
-  width: 100%;
-  height: 100%;
-}
-.slide-img2 {
-  background: url("../images/longbanner-dosirak.png") no-repeat center;
-  width: 100%;
-  height: 100%;
-}
-.slide-img3 {
-  background: url("../images/longbanner-manggo.png") no-repeat center;
-  width: 100%;
-  height: 100%;
-}
-.slide-img4 {
-  background: url("../images/longbanner-tomato.png") no-repeat center;
-
-  width: 100%;
-  height: 100%;
-}
 /* 오늘의 도시락 */
 
 .today {
