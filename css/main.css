@@ -32,22 +32,23 @@ h1 {
 /* header */
 header {
   width: 100%;
-  height: 260px;
+  height: 220px;
   position: fixed;
   display: block;
   top: 0;
   left: 0;
-  background-color: #fff;
+  background-color: #ffffff;
   z-index: 99999;
 }
 .header-top {
   width: 100%;
-  height: 175px;
+  height: 150px;
   /* background-color: aqua; */
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
 }
 .header-search {
   width: 230px;
@@ -61,7 +62,9 @@ header {
   border-bottom: 1px solid #d9d9d9;
   outline: none;
   color: #d9d9d9;
-  font-size: 20px;
+  font-size: 18px;
+  font-family: "TheJamsil1Thin";
+  font-style: italic;
 }
 .search-bt {
   background: url("../images/search.png") no-repeat center;
@@ -71,6 +74,11 @@ header {
   background-size: cover;
   border: none;
   cursor: pointer;
+}
+.header-logo a img {
+  max-width: 180px;
+  /* max-height: 100px; */
+  /* display: flex; */
 }
 .header-menu-icon {
   position: relative;
@@ -89,10 +97,10 @@ header {
   width: 40px;
   height: 40px;
 }
-
 .header-bottom {
   width: 100%;
-  height: 80px;
+  height: 100px;
+  background-color: #ffffff;
   display: block;
   position: absolute;
   bottom: 0;
@@ -103,7 +111,7 @@ header {
   width: 1200px;
   height: 100%;
   font-family: "TheJamsil3Regular", sans-serif;
-  position: relative;
+  /* position: relative; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -112,6 +120,7 @@ header {
   line-height: 22px;
   color: #222;
   margin: 0 auto;
+  margin-top: 10px;
 }
 .fa-bars {
   margin-right: 10px;
@@ -121,7 +130,7 @@ header {
   position: relative;
   width: 100%;
   height: 100%;
-  margin-top: 260px;
+  margin-top: 150px;
 }
 .swiper-slide {
   /* top: 600px; */
@@ -129,7 +138,6 @@ header {
   height: 600px;
   background-color: aqua;
 }
-
 .slide-img1 {
   background: url("../images/longbanner-sul1.png") no-repeat center;
   width: 100%;
@@ -152,11 +160,10 @@ header {
   height: 100%;
 }
 /* 오늘의 도시락 */
-
 .today {
   width: 100%;
-  height: 600px;
-  margin-top: 70px;
+  /* height: 600px; */
+  margin-top: 200px;
   /* background-color: bisque; */
 }
 .today h1 {
@@ -170,7 +177,7 @@ header {
 .today-menu {
   font-family: "Noto Sans KR", sans-serif;
   /* width: 200; */
-  height: 220px;
+  /* height: 220px; */
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -178,13 +185,16 @@ header {
   font-size: 20px;
   gap: 2%;
   font-weight: 600;
-
   margin-bottom: 50px;
 }
 .today-menu li {
   /* width: 200px;
   height: 200px; */
-  width: calc(100% / 5);
+  /* width: calc(100% / 5); */
+  width: 100%;
+  height: 100%;
+  max-width: 200px;
+  max-height: 200px;
 }
 .today-menu li a {
   display: block;
@@ -192,11 +202,12 @@ header {
   height: 100%;
 }
 .today-menu li a img {
-  /* max-width: 200px; */
+  max-width: 200px;
   width: 100%;
   height: 100%;
-  /* max-height: 200px; */
-  border: 1px solid #d9d9d9;
+  max-height: 200px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 8px rgba(70, 70, 70, 0.13);
   border-radius: 50%;
 }
 .today-menu li p {
@@ -215,23 +226,30 @@ header {
   width: 250px;
   height: 80px;
   font-size: 28px;
-  font-weight: bold;
-  background-color: #fff;
+  font-family: "TheJamsil3Regular";
+  /* background-color: #fff; */
   border-radius: 20px;
-  border: 3px solid #222;
+  border: 3px solid #444;
   margin: 0px 15px;
   cursor: pointer;
-  color: #222;
+  /* color: #444; */
   gap: 30px;
+}
+.today-bt-left {
+  background-color: #444;
+  color: #fff;
+}
+.today-bt-right {
+  background-color: #fff;
+  color: #444;
 }
 
 /* top 버튼 */
 .top-button {
 }
 
-
-.kakao{
-  background: url("../images/kakao.png")no-repeat center;
+.kakao {
+  background: url("../images/kakao.png") no-repeat center;
   width: 69px;
   height: 69px;
 
@@ -243,8 +261,8 @@ header {
   background-size: cover;
   cursor: pointer;
 }
-.insta{
-  background: url("../images/insta.png")no-repeat center;
+.insta {
+  background: url("../images/insta.png") no-repeat center;
   width: 69px;
   height: 69px;
   position: fixed;
@@ -257,7 +275,7 @@ header {
   cursor: pointer;
 }
 #topBtn-up {
-  background: url("../images/up.png")no-repeat center;
+  background: url("../images/up.png") no-repeat center;
   width: 69px;
   height: 69px;
   position: fixed;
@@ -273,7 +291,7 @@ header {
 /* 지원 */
 /* 베스트 */
 .best {
-  margin-top: 100px;
+  margin-top: 200px;
   width: 100%;
 }
 /* .best h1 {
@@ -308,11 +326,12 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  /* max-width: 1200px; */
+  max-width: 1200px;
   height: 400px;
 }
 .best-fruits li {
   position: relative;
+  width: 100%;
 }
 .best-img img:first-child {
   width: 95%;
@@ -490,9 +509,8 @@ header {
 
 .banner_bt {
   margin-top: 200px;
-  
 }
-.banner_bt .inner{
+.banner_bt .inner {
   width: 100%;
 }
 .banner_bt img {
@@ -501,7 +519,7 @@ header {
 footer {
   margin-top: 200px;
   width: 100%;
-  display: flex; 
+  display: flex;
   justify-content: space-around;
   background-color: rgb(0, 60, 0);
 }
