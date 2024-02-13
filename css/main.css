@@ -94,7 +94,7 @@ header {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: hsl(108, 100%, 82%);
+  /* background-color: hsl(108, 100%, 82%); */
 }
 .main-menu {
   width: 1200px;
@@ -207,8 +207,6 @@ header {
   text-align: center;
   margin-top: 130px;
   gap: 30px;
-
-
 }
 .today-bt button {
   width: 250px;
@@ -225,9 +223,9 @@ header {
 }
 
 /* top 버튼 */
-.top-button{
+.top-button {
 }
-.kakao{
+.kakao {
   background: url("../images/kakao.png");
   width: 79px;
   height: 79px;
@@ -245,17 +243,15 @@ header {
   right: 20px;
   border: 0;
   z-index: 99999; /* 다른 요소 위에 표시될 수 있도록 z-index를 설정합니다. */
-  background: url("../images/up.png")no-repeat center;
+  background: url("../images/up.png") no-repeat center;
   background-size: cover;
   cursor: pointer;
 }
 
-
-
-
 /* 지원 */
 /* 베스트 */
 .best {
+  margin-top: 100px;
   width: 100%;
 }
 /* .best h1 {
@@ -290,7 +286,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   height: 400px;
 }
 .best-fruits li {
@@ -456,9 +452,6 @@ header {
   font-size: 20px;
   text-decoration: line-through;
 }
-.banner_bt {
-  margin-top: 200px;
-}
 .new-more {
   font-family: "Noto Sans KR", sans-serif;
   display: block;
@@ -472,12 +465,23 @@ header {
   border: 3px solid #222;
   margin: 100px auto;
 }
+
+.banner_bt {
+  margin-top: 200px;
+  
+}
+.banner_bt .inner{
+  width: 100%;
+}
+.banner_bt img {
+  width: 100%;
+}
 footer {
   margin-top: 200px;
   width: 100%;
-  display: flex;
+  display: flex; 
   justify-content: space-around;
-  background-color: rgb(0, 85, 0);
+  background-color: rgb(0, 60, 0);
 }
 .ft-left {
   max-width: 300px;
@@ -486,7 +490,6 @@ footer {
 }
 .ft-left img {
   width: 100%;
-
 }
 .ft-right {
   font-family: "Noto Sans KR", sans-serif;
@@ -498,7 +501,7 @@ footer {
   height: 50px;
   margin-top: 10px;
 }
-.ft-right-top li a{
+.ft-right-top li a {
   color: #cfcfcf;
   font-size: 14px;
   font-weight: 200;
@@ -506,32 +509,32 @@ footer {
   justify-content: center;
   text-align: center;
 }
-.ft-right-bottom{
+.ft-right-bottom {
   margin: 50px 0;
   margin-right: 30px;
   text-align: right;
 }
-.ft-right-bottom h4{
+.ft-right-bottom h4 {
   font-family: "TheJamsil2Light";
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 20px;
   color: #fff;
 }
-.ft-right-bottom p{
+.ft-right-bottom p {
   font-family: "TheJamsil1Thin";
   margin-top: 15px;
   font-size: 14px;
   color: #cccccc;
 }
 
-.ft-right-bottom span{
+.ft-right-bottom span {
   font-family: "TheJamsil5Bold";
   font-size: 50px;
   font-weight: bold;
   color: rgb(170, 255, 170);
 }
-.ft-right-bottom span svg{
+.ft-right-bottom span svg {
   width: 35px;
   height: 35px;
 }
