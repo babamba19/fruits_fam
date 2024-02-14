@@ -1,0 +1,331 @@
+@charset "utf-8";
+@import url("font.css");
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+.notosanskr * {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* 공통 */
+.inner {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* h1 {
+  font-family: "TheJamsil5Bold";
+  font-size: 55px;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: #222;
+} */
+/* top 버튼 */
+.top-button {
+}
+
+.kakao {
+  background: url("../images/kakao.png") no-repeat center;
+  width: 69px;
+  height: 69px;
+
+  position: fixed;
+  z-index: 99999;
+  border: 0;
+  bottom: 190px;
+  right: 20px;
+  background-size: cover;
+  cursor: pointer;
+}
+.insta {
+  background: url("../images/insta.png") no-repeat center;
+  width: 69px;
+  height: 69px;
+  position: fixed;
+  z-index: 99999;
+  border: 0;
+
+  bottom: 110px;
+  right: 20px;
+  background-size: cover;
+  cursor: pointer;
+}
+#topBtn-up {
+  background: url("../images/up.png") no-repeat center;
+  width: 69px;
+  height: 69px;
+  position: fixed;
+  z-index: 99999;
+  border: 0;
+  bottom: 30px;
+  right: 20px;
+
+  background-size: cover;
+  cursor: pointer;
+}
+/* header */
+header {
+  width: 100%;
+  height: 220px;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 99999;
+}
+.header-top {
+  width: 100%;
+  height: 150px;
+  /* background-color: aqua; */
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.header-search {
+  width: 230px;
+  height: 30px;
+  position: relative;
+  /* background-color: antiquewhite; */
+}
+.search-text {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #d9d9d9;
+  outline: none;
+  color: #d9d9d9;
+  font-size: 18px;
+  font-family: "TheJamsil1Thin";
+  font-style: italic;
+}
+.search-bt {
+  background: url("../images/search.png") no-repeat center;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+.header-logo a img {
+  max-width: 180px;
+  /* max-height: 100px; */
+  /* display: flex; */
+}
+.header-menu-icon {
+  position: relative;
+  display: flex;
+  width: 150px;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.user {
+  background: url("../images/user-alt.png") no-repeat center;
+  width: 40px;
+  height: 40px;
+}
+.basket {
+  background: url("../images/shopping-basket.png") no-repeat center;
+  width: 40px;
+  height: 40px;
+}
+.header-bottom {
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* background-color: hsl(108, 100%, 82%); */
+}
+.main-menu {
+  width: 1200px;
+  height: 100%;
+  font-family: "TheJamsil3Regular", sans-serif;
+  /* position: relative; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  color: #222;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.fa-bars {
+  margin-right: 10px;
+}
+
+/* 상세페이지 */
+hr {
+  color: #d9d9d9;
+}
+.detail-pg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 250px;
+}
+.menu-select {
+  display: flex;
+  gap: 10px;
+}
+.detail-manu {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.orange {
+  width: 564px;
+  height: 564px;
+}
+.menu-right {
+  width: 593px;
+  height: 564px;
+}
+.menu-right h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.menu-right-info li {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  line-height: 80px;
+}
+.menu-right li h2 {
+  color: #707070;
+  font-size: 20px;
+  width: 150px;
+}
+.menu-right-info li b {
+  /* position: absolute;
+  right: 100px; */
+  color: #222;
+  font-weight: 600;
+  font-size: 20px;
+}
+.menu-right-info li button {
+  width: 120px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #707070;
+  cursor: pointer;
+}
+.menu-option {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.menu-option h2 {
+  color: #707070;
+  font-size: 20px;
+  width: 190px;
+  line-height: 30px;
+}
+.option {
+  width: 100%;
+  height: 30px;
+  color: #707070;
+}
+.button{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  
+}
+.button button{
+  width: 160px;
+  height: 60px;
+  background-color: #fff;
+  border: 2px solid #707070;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button button:nth-child(3){
+  width: 220px;
+  border: none;
+  background-color: rgb(0, 60, 0);
+  color: #fff;
+  cursor: pointer;
+}
+/* footer */
+footer {
+  position: relative;
+  /* margin-top: 200px; */
+  top: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(0, 60, 0);
+}
+.ft-left {
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+}
+.ft-left img {
+  width: 100%;
+}
+.ft-right {
+  font-family: "Noto Sans KR", sans-serif;
+  /* margin-bottom: 80px; */
+}
+.ft-right-top {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-top: 10px;
+}
+.ft-right-top li a {
+  color: #cfcfcf;
+  font-size: 14px;
+  font-weight: 200;
+  padding: 30px;
+  justify-content: center;
+  text-align: center;
+}
+.ft-right-bottom {
+  margin: 50px 0;
+  margin-right: 30px;
+  text-align: right;
+}
+.ft-right-bottom h4 {
+  font-family: "TheJamsil2Light";
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.ft-right-bottom p {
+  font-family: "TheJamsil1Thin";
+  margin-top: 15px;
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.ft-right-bottom span {
+  font-family: "TheJamsil5Bold";
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(170, 255, 170);
+}
+.ft-right-bottom span svg {
+  width: 35px;
+  height: 35px;
+}

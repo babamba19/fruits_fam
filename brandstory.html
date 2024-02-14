@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- css -->
+    <!-- font-aweaome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- xeicon -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <link rel="stylesheet" href="css/brandstory.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- js연동 -->
+    <script src="js/html5shiv.js"></script>
+    <!-- css3 적용 -->
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <script src="js/respond.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>과일팜</title>
+  </head>
+  <body>
+    <!-- 전체 레이아웃 -->
+    <div class="wrap">
+      <!-- top button -->
+      <div class="top-button">
+        <button class="kakao"></button>
+        <button class="insta"></button>
+        <button id="topBtn-up"></button>
+      </div>
+      <!-- 상단 -->
+      <header>
+        <div class="inner">
+          <div class="header-top">
+            <form action="#" class="header-search">
+              <input
+                type="text"
+                class="search-text"
+                maxlength="100"
+                placeholder="과일은 과일팜."
+              />
+              <input type="button" class="search-bt" />
+            </form>
+            <div class="header-logo">
+              <a href="index.html"><img src="images/logo.jpg" alt="로고" /></a>
+            </div>
+            <ul class="header-menu-icon">
+              <li class="user"><a href="#"></a></li>
+              <li class="basket"><a href="#"></a></li>
+            </ul>
+          </div>
+          <div class="header-bottom">
+            <ul class="main-menu">
+              <li>
+                <a href="#"><i class="fas fa-bars"></i>ALL</a>
+              </li>
+              <li>
+                <a href="#">도시락 <br />Farm</a>
+              </li>
+              <li>
+                <a href="#">국산<br />Farm</a>
+              </li>
+              <li>
+                <a href="#">제철<br />Farm</a>
+              </li>
+              <li>
+                <a href="#">선물세트<br />Farm</a>
+              </li>
+              <li>
+                <a href="#">정기배송<br />Farm</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- 브랜드스토리 -->
+      <div class="brand-wrap">
+        <h1>회사 소개</h1>
+        <img
+          src="images/brandstory.png"
+          alt="브랜드스토리"
+          class="brand-story-img"
+        />
+      </div>
+
+      <!-- 하단 -->
+      <footer>
+        <div class="ft-left">
+          <img src="images/logo-2.png" alt="로고" />
+        </div>
+        <div class="ft-right">
+          <ul class="ft-right-top">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보취급방침</a></li>
+            <li><a href="#">이용안내</a></li>
+          </ul>
+          <div class="ft-right-bottom">
+            <h4>고객센터 문의</h4>
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                style="fill: rgb(170, 255, 170)"
+              >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+                />
+              </svg>
+              1234-5678</span
+            >
+            <p>평일 09:00 - 18:00 (토/일, 공휴일 휴무)</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
