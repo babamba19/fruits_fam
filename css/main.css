@@ -29,6 +29,49 @@ h1 {
   color: #222;
 }
 /* 태훈 */
+/* top 버튼 */
+.top-button {
+}
+
+.kakao {
+  background: url("../images/kakao.png") no-repeat center;
+  width: 69px;
+  height: 69px;
+
+  position: fixed;
+  z-index: 99999;
+  border: 0;
+  bottom: 190px;
+  right: 20px;
+  background-size: cover;
+  cursor: pointer;
+}
+.insta {
+  background: url("../images/insta.png") no-repeat center;
+  width: 69px;
+  height: 69px;
+  position: fixed;
+  z-index: 99999;
+  border: 0;
+
+  bottom: 110px;
+  right: 20px;
+  background-size: cover;
+  cursor: pointer;
+}
+#topBtn-up {
+  background: url("../images/up.png") no-repeat center;
+  width: 69px;
+  height: 69px;
+  position: fixed;
+  z-index: 99999;
+  border: 0;
+  bottom: 30px;
+  right: 20px;
+
+  background-size: cover;
+  cursor: pointer;
+}
 /* header */
 header {
   width: 100%;
@@ -228,50 +271,6 @@ header {
 .today-bt-right {
   background-color: #fff;
   color: #444;
-}
-
-/* top 버튼 */
-.top-button {
-}
-
-.kakao {
-  background: url("../images/kakao.png") no-repeat center;
-  width: 69px;
-  height: 69px;
-
-  position: fixed;
-  z-index: 99999;
-  border: 0;
-  bottom: 190px;
-  right: 20px;
-  background-size: cover;
-  cursor: pointer;
-}
-.insta {
-  background: url("../images/insta.png") no-repeat center;
-  width: 69px;
-  height: 69px;
-  position: fixed;
-  z-index: 99999;
-  border: 0;
-
-  bottom: 110px;
-  right: 20px;
-  background-size: cover;
-  cursor: pointer;
-}
-#topBtn-up {
-  background: url("../images/up.png") no-repeat center;
-  width: 69px;
-  height: 69px;
-  position: fixed;
-  z-index: 99999;
-  border: 0;
-  bottom: 30px;
-  right: 20px;
-
-  background-size: cover;
-  cursor: pointer;
 }
 
 /* 지원 */
