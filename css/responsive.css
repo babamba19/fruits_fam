@@ -1,41 +1,203 @@
 @charset "uft-8";
-@media screen and (max-width: 1360px){
-    .swiper-slide img{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 1250px){
-
-    
-    .swiper-slide img{
-        width: 100%;
-    }
-}
-@media screen and (max-width: 1000px){
-    .main-menu {
-        width: 900px;
-        height: 100%;
-    }
-    .swiper-slide img{
-        width: 100%;
-    }
-}
-@media screen and (max-width: 768px){
-    .main-menu {
-        width: 768px;
-        height: 100%;
-    }
-    .swiper-slide img{
-        width: 100%;
-    }
-}
-@media screen and (max-width: 320px){ 
-    .main-menu {
-        width: 100%;
-        height: 100%;
-    }
-    .swiper-slide img{
+@media screen and (max-width: 1360px) {
+  .swiper-slide img {
     width: 100%;
+  }
 }
+
+@media screen and (max-width: 768px) {
+  /* 공통 */
+  h1 {
+    font-size: 2.5rem;
+  }
+  /* 아이콘 */
+  .icon{
+    right: 10px;
+  }
+  .icon li {
+    width: 45px;
+    height: 45px;
+  }
+  .icon li i {
+    font-size: 20px;
+    color: #555;
+  }
+
+  /* 헤더 */
+  .search {
+    display: flex;
+  }
+  .header-search {
+    display: none;
+  }
+  .header-top {
+    justify-content: flex-end;
+  }
+  .header-menu-icon {
+    width: 150px;
+  }
+  .header-menu-icon img {
+    width: 20px;
+    height: 20px;
+  }
+  .header-logo a img {
+    max-width: 200px;
+  }
+  .header-bottom {
+    /* height: 50px; */
+    margin: 25px auto;
+  }
+  .main-menu {
+    width: 90%;
+    margin: 0 auto;
+    /* margin-top: 20px; */
+    font-size: 0.8rem;
+  }
+  /* 슬라이드 배너 */
+  .banner {
+    margin-top: 227px;
+  }
+  .banner-1 {
+    display: none;
+  }
+  .banner-2 {
+    display: block;
+  }
+
+  /* 오늘의 도시락 */
+  .today {
+    margin-top: 150px;
+  }
+  .today-menu li p {
+    font-size: 16px;
+  }
+  .today-bt {
+    margin-top: 80px;
+  }
+  .today-bt button {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+  }
+  /* 베스트 */
+  .best {
+    margin-top: 150px;
+  }
+  .best-button {
+    margin-bottom: 20px;
+  }
+  .best-button li a {
+    font-size: 14px;
+    width: 90px;
+    height: 28px;
+  }
+  .best-img img:first-child {
+    max-width: 160px;
+    max-height: 160px;
+  }
+  .best-img img:last-child {
+    right: 22px;
+    width: 23px;
+    height: 23px;
+  }
+  .best-fruits li h3 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  .best-price {
+    margin-left: 0;
+  }
+  .best-price p:nth-child(1) {
+    font-size: 0.6rem;
+  }
+  .best-price p:nth-child(2) {
+    font-size: 1rem;
+  }
+  .best-new {
+    font-size: 0.6rem;
+    width: 30px;
+    height: 17px;
+  }
+  .best-recommend {
+    font-size: 0.6rem;
+    width: 30px;
+    height: 17px;
+  }
+  .best-more {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+  }
+  .brand_story {
+    margin-top: 150px;
+  }
+  .brand_story .inner {
+    background: url("../images/banner-brand2.jpg") no-repeat center center;
+  }
+  .brand_story p a {
+    bottom: 15px;
+    left: 43%;
+    font-size: 12px;
+    width: 95px;
+    line-height: 20px;
+  }
+  .new {
+    margin-top: 150px;
+  }
+
+  .new-img img:last-child {
+    width: 23px;
+    height: 23px;
+    top: 4px;
+  }
+  .new-fruits li h3 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  .new-price {
+    margin-left: 0;
+    margin-top: 10px;
+    gap: 5px;
+  }
+  .new-price p:nth-child(1) {
+    font-size: 1.2rem;
+  }
+  .new-price p:nth-child(2) {
+    font-size: 1.2rem;
+  }
+  .new-price p:nth-child(3) {
+    font-size: 1rem;
+  }
+  .new-more {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+  }
+  .banner_bt {
+    margin-top: 150px;
+  }
+  .banner_bt img:last-child {
+    display: block;
+  }
+  .banner_bt img:first-child {
+    display: none;
+  }
+  .ft-left img {
+    max-width: 200px;
+  }
+  .ft-right-top li a {
+    font-size: 12px;
+    padding: 15px;
+  }
+  .ft-right-bottom h4 {
+    font-size: 1.5rem;
+  }
+  .ft-right-bottom span {
+    font-size: 2.5rem;
+  }
+  .ft-right-bottom p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 320px) {
 }
