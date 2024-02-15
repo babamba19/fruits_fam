@@ -7,11 +7,16 @@
 
 @media screen and (max-width: 768px) {
   /* 공통 */
+  .inner {
+    width: 90%;
+    max-width: 768px;
+    margin: 0 auto;
+  }
   h1 {
     font-size: 2.5rem;
   }
   /* 아이콘 */
-  .icon{
+  .icon {
     right: 10px;
   }
   .icon li {
@@ -20,10 +25,12 @@
   }
   .icon li i {
     font-size: 20px;
-    color: #555;
   }
 
   /* 헤더 */
+  .header-top {
+    margin-top: 25px;
+  }
   .search {
     display: flex;
   }
@@ -35,6 +42,7 @@
   }
   .header-menu-icon {
     width: 150px;
+    gap: 25px;
   }
   .header-menu-icon img {
     width: 20px;
@@ -45,7 +53,7 @@
   }
   .header-bottom {
     /* height: 50px; */
-    margin: 25px auto;
+    margin: 40px 0;
   }
   .main-menu {
     width: 90%;
@@ -53,6 +61,7 @@
     /* margin-top: 20px; */
     font-size: 0.8rem;
   }
+
   /* 슬라이드 배너 */
   .banner {
     margin-top: 227px;
@@ -79,6 +88,7 @@
     height: 60px;
     font-size: 20px;
   }
+
   /* 베스트 */
   .best {
     margin-top: 150px;
@@ -128,6 +138,8 @@
     height: 60px;
     font-size: 20px;
   }
+
+  /* 브랜드스토리 */
   .brand_story {
     margin-top: 150px;
   }
@@ -141,6 +153,8 @@
     width: 95px;
     line-height: 20px;
   }
+
+  /* 제철과일 */
   .new {
     margin-top: 150px;
   }
@@ -173,6 +187,8 @@
     height: 60px;
     font-size: 20px;
   }
+
+  /* 명절배너 */
   .banner_bt {
     margin-top: 150px;
   }
@@ -182,6 +198,8 @@
   .banner_bt img:first-child {
     display: none;
   }
+
+  /* 푸터 */
   .ft-left img {
     max-width: 200px;
   }
@@ -200,4 +218,154 @@
   }
 }
 @media screen and (max-width: 320px) {
+  /* 고정 아이콘 */
+  .icon {
+    right: 10px;
+    gap: 7px;
+  }
+  .icon li {
+    width: 30px;
+    height: 30px;
+  }
+  .icon li i {
+    font-size: 18px;
+  }
+  /* 헤더 아이콘 */
+  .header-top{
+    margin-top: 15px;
+  }
+  .header-menu-icon {
+    width: 100px;
+    gap: 11px;
+  }
+  .header-menu-icon img {
+    width: 11px;
+    height: 11px;
+  }
+  /* 헤더 */
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  header {
+    width: 100%;
+    max-width: 320px;
+  }
+  .header-logo a img {
+    max-width: 120px;
+  }
+  .header-bottom{
+    margin: 18px 0;
+  }
+  .main-menu {
+    font-family: "TheJamsil2Light";
+    font-size: 0.5rem;
+  }
+  .fa-bars {
+    margin-right: 5px;
+  }
+  /* 배너 */
+  .banner{
+    margin-top: 135px;
+  }
+  /* 오늘의 도시락 */
+  .today {
+    margin-top: 100px;
+  }
+  .today-menu{
+    margin: 20px auto;
+  }
+  .today-menu li p {
+    font-size: 10px;
+    margin-top: 15px;
+  }
+  .today-bt {
+    margin-top: 50px;
+
+  }
+  .today-bt button {
+    width: 100px;
+    height: 40px;
+    font-size: 13px;
+    border-radius: 15px;
+    border: 2px solid;
+  }
+  /* 베스트 */
+  .best {
+    width: 100%;
+    max-width: 320px;
+    margin-top: 100px;
+  }
+  .best-button {
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  .best-button li a {
+    width: 45px;
+    height: 15px;
+    font-size: 0.4rem;
+    border: 1px solid;
+  }
+  .best-button li:first-child a {
+    border: 1px solid;
+  }
+  .best-img img:first-child {
+    /* width: 90%; */
+  }
+  .best-img img:first-child {
+    max-width: 90px;
+    max-height: 90px;
+  }
+  .best-img img:last-child {
+    width: 12px;
+    height: 12px;
+    right: 10px;
+    top: 2px;
+  }
+  .best-fruits li h3 {
+    font-size: 0.43rem;
+  }
+  .best-price p:nth-child(1) {
+    font-size: 0.28rem;
+  }
+  .best-price p:nth-child(2) {
+    font-size: 0.45rem;
+    margin-left: 2px;
+  }
+  .best-new {
+    font-size: 0.2rem;
+    margin-left: 2px;
+    width: 12px;
+    height: 7px;
+    border-radius: 2px;
+  }
+  .best-recommend {
+    font-size: 0.2rem;
+    margin-left: 2px;
+    width: 12px;
+    height: 7px;
+    border-radius: 2px;
+  }
+  .best-more {
+    width: 100px;
+    height: 40px;
+    font-size: 13px;
+    border-radius: 15px;
+    border: 2px solid;
+    margin-top: 50px;
+  }
+  .brand_story .inner {
+    background: url("../images/banner-brand3.jpg") no-repeat center;
+  }
+  .brand_story p a {
+    left: 41%;
+    font-size: 8px;
+    width: 60px;
+    line-height: 14px;
+    border-radius: 6px;
+  }
+  .new {
+    width: 100%;
+    max-width: 320px;
+  }
 }
