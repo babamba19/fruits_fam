@@ -320,6 +320,10 @@ header {
   box-shadow: 0 0 8px rgba(70, 70, 70, 0.13);
   border-radius: 50%;
 }
+.today-menu li:hover a img{
+  filter: opacity(.3) grayscale(5);
+  transition: .3s ease-in-out;
+}
 .today-menu li p {
   /* line-height: 40px; */
   font-size: 20px;

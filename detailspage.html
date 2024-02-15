@@ -64,31 +64,45 @@
     <!-- 전체 레이아웃 -->
     <div class="wrap">
       <!-- top button -->
-      <div class="top-button">
-        <button class="kakao"></button>
-        <button class="insta"></button>
-        <button id="topBtn-up"></button>
-      </div>
+      <ul class="icon">
+        <li><i class="fas fa-heart"></i></li>
+        <li><i class="fas fa-headset"></i></li>
+        <li><i class="fas fa-arrow-up"></i></li>
+      </ul>
       <!-- 상단 -->
       <header>
         <div class="inner">
           <div class="header-top">
-            <form action="#" class="header-search">
+            <div class="header-search">
               <input
                 type="text"
                 class="search-text"
                 maxlength="100"
-                placeholder="과일은 과일팜."
+                placeholder="과일은 과일팜"
               />
-              <input type="button" class="search-bt" />
-            </form>
+              <img src="images/search.png" alt="검색" />
+            </div>
+
+            <ul class="header-menu-icon">
+              <li class="search">
+                <a href="#"><img src="images/search.png" alt="검색" /></a>
+              </li>
+              <li class="user">
+                <a href="#"
+                  ><img src="images/user-alt.png" alt="마이페이지"
+                /></a>
+              </li>
+              <li class="basket">
+                <a href="#"
+                  ><img src="images/shopping-basket.png" alt="장바구니"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-md">
             <div class="header-logo">
               <a href="index.html"><img src="images/logo.jpg" alt="로고" /></a>
             </div>
-            <ul class="header-menu-icon">
-              <li class="user"><a href="#"></a></li>
-              <li class="basket"><a href="#"></a></li>
-            </ul>
           </div>
           <div class="header-bottom">
             <ul class="main-menu">
@@ -167,10 +181,60 @@
                 <button>바로 구매</button>
               </div>
             </div>
-          
           </div>
           <div class="product-info">
-            
+            <hr />
+            <div class="info-bt">
+              <button>상품 상세정보</button>
+              <button>상품 후기</button>
+              <button>상품 문의</button>
+            </div>
+            <img
+              src="images/productinfo.jpg"
+              alt="상품 상세정보"
+              class="product-img"
+            />
+          </div>
+          <div class="product-review">
+            <div class="review">
+              <h1>상품후기</h1>
+              <div class="review-bt">
+                <button>글쓰기</button>
+                <button>전체보기</button>
+              </div>
+
+              <!-- <button>상품 상세정보</button>
+              <button>상품 후기</button>
+              <button>상품 문의</button> -->
+            </div>
+            <!-- <div class="review-view-button">
+              <button>상품후기 전체보기</button>
+              <button>상품후기 글쓰기</button>
+            </div> -->
+            <div class="review-page">
+              <p>등록된 상품후기가 없습니다.</p>
+            </div>
+          
+          </div>
+          <div class="product-inquiry">
+            <div class="inquiry">
+              <h1>상품문의</h1>
+              <div class="inquiry-bt">
+                <button>글쓰기</button>
+                <button>전체보기</button>
+              </div>
+
+              <!-- <button>상품 상세정보</button>
+              <button>상품 후기</button>
+              <button>상품 문의</button> -->
+            </div>
+            <!-- <div class="inquiry-view-button">
+              <button>상품문의 전체보기</button>
+              <button>상품문의 글쓰기</button>
+            </div> -->
+            <hr />
+            <p>등록된 상품문의가 없습니다.</p>
+            <hr />
           </div>
         </div>
       </div>
