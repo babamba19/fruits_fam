@@ -57,6 +57,7 @@
     <script src="js/respond.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <title>과일팜</title>
   </head>
@@ -213,6 +214,97 @@
           </div>
         </div>
       </section>
+      <!-- 할인특가 -->
+      <section class="sale">
+        <div class="inner">
+          <div class="sale-left">
+            <h1>오늘만 할인</h1>
+            <hr />
+            <p>가격 인하 과일을 <br> 오늘 바로 배송해드립니다 !</p>
+            <div class="sale-button">
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+              <div class="swiper-button-prev">
+                <i class="fas fa-arrow-left"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper -->
+          <div class="swiper sw-sale">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="images/durian.jpg" alt="두리안" />
+                  <div class="sale-txt">
+                    <h2>태국산 두리안</h2>
+                    <div class="sale-price">
+                      <p>50%</p>
+                      <p>5,000원</p>
+                      <p>10,000원</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="images/pineapple_4.jpg" alt="파인애플" />
+                  <div class="sale-txt">
+                    <h2>고당도 골드파인애플</h2>
+                    <div class="sale-price">
+                      <p>50%</p>
+                      <p>5,000원</p>
+                      <p>10,000원</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="images/drangon fruit.jpg" alt="용과" />
+                  <div class="sale-txt">
+                    <h2>백용과 레드용과</h2>
+                    <div class="sale-price">
+                      <p>50%</p>
+                      <p>5,000원</p>
+                      <p>10,000원</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="images/mangostin.jpg" alt="망고스틴" />
+                  <div class="sale-txt">
+                    <h2>태국산 망고스틴</h2>
+                    <div class="sale-price">
+                      <p>50%</p>
+                      <p>5,000원</p>
+                      <p>10,000원</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="images/sukryu.jpg" alt="석류" />
+                  <div class="sale-txt">
+                    <h2>미국산 석류</h2>
+                    <div class="sale-price">
+                      <p>50%</p>
+                      <p>5,000원</p>
+                      <p>10,000원</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- BEST -->
       <section class="best">
         <div class="inner">
@@ -296,13 +388,6 @@
           <button class="best-more">+ MORE</button>
         </div>
       </section>
-      <!-- 브랜드 스토리 -->
-      <section class="brand_story">
-        <div class="inner">
-          <!-- <img src="images/banner-brand.jpg" alt="브랜드스토리"> -->
-          <p><a href="/brandstory.html">자세히 보기</a></p>
-        </div>
-      </section>
       <!-- 제철 과일 -->
       <section class="new">
         <div class="inner">
@@ -363,11 +448,11 @@
           <button class="new-more">+ MORE</button>
         </div>
       </section>
-      <!-- 하단 베너 -->
-      <section class="banner_bt">
+      <!-- 브랜드 스토리 -->
+      <section class="brand_story">
         <div class="inner">
-          <img src="images/banner-2_1200px.png" alt="명절배너" />
-          <img src="images/banner-2_768px.png" alt="명절배너" />
+          <!-- <img src="images/banner-brand.jpg" alt="브랜드스토리"> -->
+          <p><a href="/brandstory.html">자세히 보기</a></p>
         </div>
       </section>
       <!-- 하단 -->
@@ -388,7 +473,7 @@
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                style="fill: rgb(0, 60, 0)"
+                style="fill: rgb(0, 107, 0)"
               >
                 <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                 <path
