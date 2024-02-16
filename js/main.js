@@ -20,4 +20,24 @@ window.onload = function () {
     mousewheel: true,
     keyboard: true,
   });
+  var swiper = new Swiper(".sw-sale", {
+    cssMode: true,
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".sale-left .swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".sale-left .swiper-button-next",
+      prevEl: ".sale-left .swiper-button-next",
+    },
+    mousewheel: true,
+    keyboard: true,
+  });
 };
