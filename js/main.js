@@ -26,7 +26,7 @@ window.onload = function () {
     spaceBetween: 25,
     loop: true,
     autoplay: {
-      delay: 4000,
+      delay: 3500,
       disableOnInteraction: false,
     },
     pagination: {
@@ -35,9 +35,22 @@ window.onload = function () {
     },
     navigation: {
       nextEl: ".sale-left .swiper-button-next",
-      prevEl: ".sale-left .swiper-button-next",
+      prevEl: ".sale-left .swiper-button-prev",
     },
     mousewheel: true,
     keyboard: true,
-  });
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      800: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+  }});
 };

@@ -4,6 +4,7 @@
     width: 100%;
   }
 }
+
 @media screen and (max-width: 1300px) {
   /* 생생 후기 */
   .review-right h2 {
@@ -159,6 +160,7 @@
   }
 }
 
+
 @media screen and (max-width: 768px) {
   /* 공통 */
   .inner {
@@ -207,7 +209,7 @@
   }
   .header-bottom {
     /* height: 50px; */
-    margin: 40px 0;
+    margin: 40px 0 0 0;
   }
   .main-menu {
     width: 90%;
@@ -218,7 +220,7 @@
 
   /* 슬라이드 배너 */
   .banner {
-    margin-top: 227px;
+    /* margin-top: 227px; */
   }
   .banner-1 {
     display: none;
@@ -241,6 +243,46 @@
     width: 200px;
     height: 60px;
     font-size: 20px;
+  }
+  /* 할인 */
+  .sale .inner {
+    padding: 80px 0;
+  }
+  .sale-left p {
+    font-size: 1.1rem;
+  }
+  .sale-left .swiper-pagination {
+    bottom: 2px;
+    left: -32px;
+    font-size: 1.1rem;
+  }
+  .swiper-button-prev .fas {
+    font-size: 1.3rem;
+    bottom: -150px;
+    left: -5px;
+  }
+  .swiper-button-next .fas {
+    font-size: 1.3rem;
+    bottom: -150px;
+    left: -50px;
+  }
+  .sw-sale {
+    width: 60%;
+  }
+  .sw-sale .swiper-wrapper .swiper-slide {
+    width: calc(100% / 2);
+  }
+  .sale-txt h2 {
+    font-size: 1.15rem;
+  }
+  .sale-price p:nth-child(1) {
+    font-size: 1rem;
+  }
+  .sale-price p:nth-child(2) {
+    font-size: 1rem;
+  }
+  .sale-price p:nth-child(3) {
+    font-size: 0.8rem;
   }
 
   /* 베스트 */
@@ -295,10 +337,10 @@
 
   /* 브랜드스토리 */
   .brand_story {
-    margin-top: 150px;
-  }
-  .brand_story .inner {
     background: url("../images/banner-brand2.jpg") no-repeat center center;
+    width: 100%;
+    height: 250px;
+    margin-top: 150px;
   }
   .brand_story p a {
     bottom: 15px;
@@ -307,7 +349,6 @@
     width: 95px;
     line-height: 20px;
   }
-
   /* 제철과일 */
   .new {
     margin-top: 150px;
@@ -392,6 +433,7 @@
 .review-right .id {
   margin-bottom: 5px;
 }
+
   /* 푸터 */
   .ft-left img {
     max-width: 200px;
@@ -546,8 +588,10 @@
     border: 2px solid;
     margin-top: 50px;
   }
-  .brand_story .inner {
-    background: url("../images/banner-brand3.jpg") no-repeat center;
+  .brand_story {
+    background: url("../images/banner-brand3.jpg") no-repeat center center;
+    width: 100%;
+    height: 250px;
   }
   .brand_story p a {
     left: 41%;
@@ -559,5 +603,41 @@
   .new {
     width: 100%;
     max-width: 320px;
+    margin-top: 100px;
+  }
+  .new-fruits{
+    grid-template-columns: repeat(3, 0.1fr);
+    grid-gap: 10px;
+  }
+  .new-img img:first-child{
+    width: 100%;
+  }
+  .new-img img:last-child {
+    width: 15px;
+    height: 15px;
+    top: 4px;
+  }
+  .new-fruits li h3 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  .new-price {
+    margin-left: 0;
+    margin-top: 10px;
+    gap: 5px;
+  }
+  .new-price p:nth-child(1) {
+    font-size: 1.2rem;
+  }
+  .new-price p:nth-child(2) {
+    font-size: 1.2rem;
+  }
+  .new-price p:nth-child(3) {
+    font-size: 1rem;
+  }
+  .new-more {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
   }
 }
