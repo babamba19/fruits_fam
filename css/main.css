@@ -641,7 +641,7 @@ header {
 /* 생생 후기 */
 .reviewpage{
   width: 100%;
-  height: 850px;
+  height: 55rem;
   padding-top: 30px;
   padding-bottom: 50px;
   background-color: rgb(236, 255, 224);
@@ -668,7 +668,7 @@ header {
   line-height: 30px;
 }
 .review-right h2{
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 700;
   margin-top: 30px;
 }
@@ -680,6 +680,7 @@ header {
 }
 .review-right span{
   font-weight: 500;
+  width: 250px;
 }
 .review-right .id{
   margin-top: 17px;
@@ -692,7 +693,7 @@ header {
   float: right;
   border: 2px solid #777;
   border-radius: 30px;
-  background-color: rgb(223, 253, 205);
+  background-color: transparent;
   cursor: pointer;
 }
 
