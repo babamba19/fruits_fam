@@ -1,4 +1,13 @@
 window.onload = function () {
+  // top 버튼
+  document.getElementById("scroll");
+  
+    topBtn.addEventListener("click", function (event) {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
   // swiper
   var swiper = new Swiper(".sw-banner", {
     cssMode: true,

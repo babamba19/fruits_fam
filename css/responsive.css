@@ -9,7 +9,7 @@
   /* 생생 후기 */
   .reviewpage {
     width: 100%;
-    height: 42vh;
+    height: 750px;
     padding-top: 30px;
     padding-bottom: 50px;
     background-color: rgb(236, 255, 224);
@@ -21,6 +21,7 @@
     white-space: nowrap;
     width: 250px;
     height: 30px;
+    margin-top: 20px;
   }
   .review-right span {
     display: inline-block;
@@ -35,10 +36,19 @@
 @media screen and (max-width: 1200px) {
   .reviewpage {
     width: 100%;
-    height: 50rem;
+    height: 730px;
     padding-top: 30px;
     padding-bottom: 50px;
     background-color: rgb(236, 255, 224);
+  }
+  .review img {
+    width: 220px;
+    height: 220px;
+    padding: 10px;
+  }
+  .review-right h2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
   }
   .sale-left .swiper-pagination {
     bottom: 34px;
@@ -89,34 +99,54 @@
   /* 생생 후기 */
   .reviewpage {
     width: 100%;
-    height: 45vh;
+    height: 680px;
     padding-top: 30px;
     padding-bottom: 50px;
     background-color: rgb(236, 255, 224);
   }
+  .review {
+    width: 49%;
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
   .review img {
-    width: 50%;
-    height: 50%;
+    width: 200px;
+    height: 200px;
     padding: 10px;
   }
   .review-right h2 {
     font-size: 1.2rem;
+    margin-top: 10px;
   }
   .review-right span {
     font-size: 1rem;
     width: 200px;
   }
   .review-right .id {
-    margin-bottom: 20px;
+    margin-top: 0px;
   }
 }
 
 @media screen and (max-width: 1050px) {
   /* 생생 후기 */
-  .review img {
-    width: 50%;
+  .review {
+    width: 49%;
     height: 50%;
+
+    background-color: #fff;
+    display: flex;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
   }
+  .review img {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+  }
+
   .review-right h2 {
     display: inline-block;
     overflow: hidden;
@@ -124,6 +154,7 @@
     white-space: nowrap;
     width: 200px;
     height: 30px;
+    margin-top: 10px;
   }
   .review-right span {
     display: inline-block;
@@ -282,28 +313,8 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
-  /* 상세페이지 */
-  .menu-right-info li {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    line-height: 80px;
-  }
-  .menu-right li h2 {
-    color: #707070;
-    font-size: 20px;
-    width: 130px;
-  }
-  .menu-right-info li b {
-    /* position: absolute;
-  right: 100px; */
-    color: #222;
-    font-weight: 600;
-    font-size: 19px;
-  }
-}
 @media screen and (max-width: 850px) {
+  /* 상세페이지 */
   .menu-right li h2 {
     color: #707070;
     font-size: 20px;
@@ -319,6 +330,13 @@
 }
 @media screen and (max-width: 900px) {
   /* 생생 후기 */
+  .reviewpage {
+    width: 100%;
+    height: 680px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: rgb(236, 255, 224);
+  }
   .review-right h2 {
     display: inline-block;
     overflow: hidden;
@@ -573,52 +591,56 @@
     display: none;
   }
 
-  /* 생생 후기 */
-  .reviewpage {
-    width: 100%;
-    height: 54vh;
-    padding-top: 5px;
-    background-color: rgb(236, 255, 224);
-  }
-  .review-list {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5px;
-  }
-  .review {
-    width: 100%;
-    height: 180px;
-    background-color: #fff;
-    display: flex;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-  .review img {
-    width: 180px;
-    height: 180px;
-    padding: 10px;
-  }
-  .review-right h2 {
-    width: 300px;
-    height: 30px;
-    margin: 0px;
-  }
-  .star {
-    font-size: 1rem;
-    font-weight: 500;
-    margin: 0px;
-  }
-  .review-right span {
-    width: 350px;
-    height: 25%;
-    font-size: 15px;
-    line-height: 25px;
-  }
-  .review-right .id {
-    height: 20px;
-    margin: 0px;
-  }
+
+/* 생생 후기 */
+.reviewpage {
+  width: 100%;
+  height: 950px;
+  padding-top: 5px;
+  background-color: rgb(236, 255, 224);
+}
+.review-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+.review {
+  width: 100%;
+  height: 180px;
+  background-color: #fff;
+  display: flex;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.review img {
+  width: 180px;
+  height: 180px;
+  padding: 10px;
+}
+.review-right h2 {
+  width: 300px;
+  height: 30px;
+  margin-top: 10px;
+}
+.star {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0px;
+  
+}
+.review-right span {
+  width: 350px;
+  height: 25%;
+  font-size: 15px;
+  line-height: 25px;
+}
+.review-right .id {
+  
+  height: 20px;
+margin: 0px;
+}
+
 
   /* 푸터 */
   .ft-left img {
@@ -640,38 +662,39 @@
 }
 @media screen and (max-width: 480px) {
   /* 생생 후기 */
-  .reviewpage {
-    width: 100%;
-    height: 950px;
-    padding-top: 5px;
-    background-color: rgb(236, 255, 224);
-  }
-  .review-list {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5px;
-  }
-  .review {
-    width: 100%;
-    height: 180px;
-    background-color: #fff;
-    display: flex;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-  .review img {
-    width: 180px;
-    height: 100%;
-    padding: 10px;
-  }
-  .review-right h2 {
-    width: 200px;
-    height: 30px;
-    margin-top: 10px;
-  }
-  .review-right span {
-    display: inline-block;
+.reviewpage {
+  width: 100%;
+  height: 950px;
+  padding-top: 5px;
+  background-color: rgb(236, 255, 224);
+}
+.review-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+.review {
+  width: 100%;
+  height: 180px;
+  background-color: #fff;
+  display: flex;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.review img {
+  width: 180px;
+  height: 100%;
+  padding: 10px;
+}
+.review-right h2 {
+  width: 220px;
+  height: 30px;
+  margin-top: 10px;
+}
+.review-right span {
+  display: inline-block;
+
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -684,6 +707,101 @@
     height: 20px;
     margin: 0px;
   }
+}
+
+
+@media screen and (max-width: 420px){
+  /* 생생 후기 */
+  .reviewpage {
+    width: 100%;
+    height: 850px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: rgb(236, 255, 224);
+  }
+  .review {
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    display: flex;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .review img {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+  }
+  .review-right {
+    line-height: 30px;
+  }
+  
+  .review-right h2 {
+    font-size: 16px;
+    height: 22px;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  .star {
+    font-size: 15px;
+    font-weight: 500;
+    height: 20px;
+    margin-bottom: 10px;
+  }
+  .review-right span {
+    font-size: 13px;
+    display: inline-block;
+    font-weight: 500;
+    height: 45px;
+  
+  .review-right .id {
+display: none;
+}
+}
+@media screen and (max-width: 390px){
+  /* 생생 후기 */
+  .reviewpage {
+    width: 100%;
+    height: 850px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: rgb(236, 255, 224);
+  }
+  .review img {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+  }
+  .review-right {
+    line-height: 30px;
+  }
+  
+  .review-right h2 {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 10px;
+    width: 155px;
+  }
+  .star {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  .review-right span {
+    font-size: 12px;
+    display: inline-block;
+    font-weight: 500;
+    height: 50px;
+    width: 150px;
+  }
+  .review-right .id {
+  font-size: 10px;
+}
 }
 
 @media screen and (max-width: 320px) {
@@ -968,46 +1086,63 @@
     border: 2px solid;
     margin: 30px auto 0;
   }
-  /* 생생 후기 */
-  .reviewpage {
-    margin-top: 100px;
-    width: 100%;
-    height: 950px;
-    padding-top: 5px;
-    background-color: rgb(236, 255, 224);
-  }
-  .review-list {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5px;
-  }
-  .review {
-    width: 100%;
-    height: 180px;
-    background-color: #fff;
-    display: flex;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-  .review img {
-    width: 50%;
-    height: 50%;
-    padding: 10px;
-  }
-  .review-right h2 {
-    width: 200px;
-    height: 30px;
-    margin-top: 10px;
-  }
-  .review-right span {
-    width: 200px;
-    height: 25%;
-    font-size: 15px;
-    line-height: 25px;
-  }
-  .review-right .id {
-    height: 20px;
-    margin: 0px;
-  }
+ 
+
+    /* 생생 후기 */
+    .reviewpage h1 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      
+    }
+.reviewpage {
+  width: 100%;
+  height: 720px;
+  padding: 20px 0;
+  background-color: rgb(236, 255, 224);
+}
+.review-page .inner{
+  padding: 20px 0;
+}
+.review-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+.review {
+  width: 100%;
+  height: 130px;
+  background-color: #fff;
+  display: flex;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.review img {
+  width: 130px;
+  height: 130px;
+  padding: 10px;
+}
+.review-right h2 {
+  width: 200px;
+  height: 22px;
+  margin-top: 10px;
+}
+.star {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.r
+.review-right span {
+  width: 180px;
+  height: 50px;
+  font-size: 12px;
+  line-height: 25px;
+
+}
+.review-right .id {
+  height: 20px;
+margin: 0px;
+}
 }

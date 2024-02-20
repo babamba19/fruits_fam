@@ -51,6 +51,7 @@ h1 {
   align-items: center;
   background-color: #fff;
   box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.36);
+  cursor: pointer;
 }
 .icon li i {
   font-size: 28px;
@@ -645,6 +646,7 @@ header {
   display: flex;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  cursor: pointer;
 }
 .review img {
   width: 40%;
@@ -659,7 +661,7 @@ header {
   font-size: 1.4rem;
 
   font-weight: 700;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .star {
   font-size: 1.4rem;
@@ -668,8 +670,9 @@ header {
   margin-bottom: 17px;
 }
 .review-right span {
+  display: inline-block;
   font-weight: 500;
-  width: 250px;
+  height: 50px;
 }
 .review-right .id {
   margin-top: 17px;
