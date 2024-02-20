@@ -470,31 +470,29 @@ header {
 }
 .best-fruits {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  /* max-width: 1200px; */
-  /* height: 400px; */
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .best-fruits li {
+  width: calc(100% / 5 - 20px);
   position: relative;
-  width: 100%;
 }
 .best-img img:first-child {
-  width: 90%;
+  width: 100%;
   max-width: 300px;
   max-height: 300px;
 }
 .best-img img:last-child {
   position: absolute;
   top: 5px;
-  right: 38px;
-  width: 35px;
-  height: 35px;
+  right: 5px;
+  width: 25px;
+  height: 25px;
   opacity: 0.8;
 }
 .best-fruits li h3 {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 25px 0 15px 10px;
   color: #222;
 }
@@ -506,13 +504,13 @@ header {
 }
 .best-price p:nth-child(1) {
   color: rgb(100, 100, 100);
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-decoration: line-through;
 }
 .best-price p:nth-child(2) {
   margin-left: 10px;
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: #222;
 }
@@ -559,18 +557,18 @@ header {
   margin-top: 200px;
 }
 .new-fruits {
-  width: 100%;
-  max-width: 1200px;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .new-fruits li {
+  width: calc(100% / 5 - 20px);
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 .new-img img:first-child {
   width: 100%;
+  height: 100%;
   max-width: 250px;
   max-height: 250px;
 }
@@ -578,8 +576,8 @@ header {
   position: absolute;
   top: 5px;
   right: 5px;
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   opacity: 0.8;
 }
 .new-fruits li h3 {
@@ -654,7 +652,7 @@ header {
   line-height: 30px;
 }
 
-.review-right h2{
+.review-right h2 {
   font-size: 1.4rem;
 
   font-weight: 700;
@@ -686,8 +684,10 @@ header {
 }
 .brand_story {
   width: 100%;
+  height: 250px;
   margin-top: 200px;
   position: relative;
+  background: url("../images/banner-brand.jpg") no-repeat center center;
 }
 .brand_story p {
   display: flex;
@@ -698,7 +698,7 @@ header {
   font-size: 14px;
   position: absolute;
   bottom: 30px;
-  left: 45.5%;
+  left: 47.2%;
   width: 110px;
   line-height: 25px;
   color: #c9c9c9;
