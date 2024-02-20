@@ -50,7 +50,7 @@ window.onload = function () {
       },
       800: {
         slidesPerView: 3,
-        spaceBetween: 20,
+        spaceBetween: 10,
       },
   }});
 };
