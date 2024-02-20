@@ -295,7 +295,7 @@ header {
 }
 .today-menu li a p {
   /* line-height: 40px; */
-  font-size: 20px;
+  font-size: 1.5rem;
   margin-top: 30px;
   color: #222;
 }
@@ -362,6 +362,7 @@ header {
   font-size: 1.2rem;
   line-height: 30px;
 }
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
   display: none;
@@ -369,7 +370,7 @@ header {
 .sale-left .swiper-pagination {
   font-family: "TheJamsil4Medium";
   position: absolute;
-  bottom: 47px;
+  bottom: 50px;
   left: -75px;
   font-size: 1.3rem;
 }
@@ -455,8 +456,9 @@ header {
 .best-button li a {
   display: flex;
   font-family: "Noto Sans KR", sans-serif;
-  color: orange;
-  border: 2px solid orange;
+  color: rgb(0, 107, 0);
+  border: 2px solid rgb(0, 107, 0);
+  background-color: #fff;
   border-radius: 30px;
   width: 100px;
   height: 35px;
@@ -466,8 +468,9 @@ header {
 }
 .best-button li:first-child a {
   /* filter: brightness(0.1); */
-  color: #222;
-  border: 2px solid #222;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 107, 0);
+  background-color: rgb(0, 107, 0);
 }
 .best-fruits {
   display: flex;
@@ -494,7 +497,7 @@ header {
 .best-fruits li h3 {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 1.2rem;
-  margin: 25px 0 15px 10px;
+  margin: 10px 0 10px 10px;
   color: #222;
 }
 .best-price {
