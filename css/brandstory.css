@@ -49,6 +49,7 @@ h1 {
   align-items: center;
   background-color: #fff;
   box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.36);
+  cursor: pointer;
 }
 .icon li i {
   font-size: 28px;
@@ -180,7 +181,7 @@ header {
   }
   /* footer */
   footer {
-    margin-top: 0px;
+    margin-top: 100px;
     width: 100%;
     display: flex;
     justify-content: space-around;

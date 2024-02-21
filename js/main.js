@@ -1,4 +1,20 @@
 window.onload = function () {
+  // top 버튼
+  document.getElementById("scroll-to-top").addEventListener("click", function() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+  window.addEventListener("scroll", function() {
+    var scrollButton = document.getElementById("scroll-to-top-btn");
+    if (window.scrollY > 300) {
+      scrollButton.style.display = "block";
+    } else {
+      scrollButton.style.display = "none";
+    }
+  });
+
   // swiper
   var swiper = new Swiper(".sw-banner", {
     cssMode: true,
