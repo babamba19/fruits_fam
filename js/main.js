@@ -14,6 +14,7 @@ window.onload = function () {
       scrollButton.style.display = "none";
     }
   });
+
   // swiper
   var swiper = new Swiper(".sw-banner", {
     cssMode: true,
@@ -61,11 +62,12 @@ window.onload = function () {
       },
       768: {
         slidesPerView: 2,
-        spaceBetween: 10,
+        spaceBetween: 20,
       },
       800: {
         slidesPerView: 3,
         spaceBetween: 10,
       },
-  }});
+    },
+  });
 };
