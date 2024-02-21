@@ -66,63 +66,66 @@
       <ul class="icon">
         <li><i class="fas fa-heart"></i></li>
         <li><i class="fas fa-headset"></i></li>
-        <li><i class="fas fa-arrow-up"></i></li>
+        <li><i class="fas fa-arrow-up" id="scroll-to-top"></i></li>
       </ul>
-     <!-- 상단 -->
-     <header>
-      <div class="inner">
-        <div class="header-top">
-          <div class="header-search">
-            <input
-              type="text"
-              class="search-text"
-              maxlength="100"
-              placeholder="과일은 과일팜"
-            />
-            <img src="images/search.png" alt="검색" />
-          </div>
-
-          <ul class="header-menu-icon">
-            <li class="search">
-              <a href="#"><img src="images/search.png" alt="" /></a>
-            </li>
-            <li class="user">
-              <a href="#"><img src="images/user-alt.png" alt="" /></a>
-            </li>
-            <li class="basket">
-              <a href="#"><img src="images/shopping-basket.png" alt="" /></a>
-            </li>
-          </ul>
-        </div>
-        <div class="header-md">
-          <div class="header-logo">
-            <a href="index.html"><img src="images/logo.jpg" alt="로고" /></a>
-          </div>
-        </div>
+      <div class="scroll-to-top" id="scroll-to-top-btn">
+        <i class="fas fa-arrow-up"></i>
       </div>
-    </header>
-    <div class="header-bottom">
-      <ul class="main-menu">
-        <li>
-          <a href="#"><i class="fas fa-bars"></i>ALL</a>
-        </li>
-        <li>
-          <a href="#">도시락 <br />Farm</a>
-        </li>
-        <li>
-          <a href="#">국산<br />Farm</a>
-        </li>
-        <li>
-          <a href="#">제철<br />Farm</a>
-        </li>
-        <li>
-          <a href="#">선물세트<br />Farm</a>
-        </li>
-        <li>
-          <a href="#">정기배송<br />Farm</a>
-        </li>
-      </ul>
-    </div>
+      <!-- 상단 -->
+      <header>
+        <div class="inner">
+          <div class="header-top">
+            <div class="header-search">
+              <input
+                type="text"
+                class="search-text"
+                maxlength="100"
+                placeholder="과일은 과일팜"
+              />
+              <img src="images/search.png" alt="검색" />
+            </div>
+
+            <ul class="header-menu-icon">
+              <li class="search">
+                <a href="#"><img src="images/search.png" alt="" /></a>
+              </li>
+              <li class="user">
+                <a href="#"><img src="images/user-alt.png" alt="" /></a>
+              </li>
+              <li class="basket">
+                <a href="#"><img src="images/shopping-basket.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-md">
+            <div class="header-logo">
+              <a href="index.html"><img src="images/logo.jpg" alt="로고" /></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="header-bottom">
+        <ul class="main-menu">
+          <li>
+            <a href="#"><i class="fas fa-bars"></i>ALL</a>
+          </li>
+          <li>
+            <a href="#">도시락 <br />Farm</a>
+          </li>
+          <li>
+            <a href="#">국산<br />Farm</a>
+          </li>
+          <li>
+            <a href="#">제철<br />Farm</a>
+          </li>
+          <li>
+            <a href="#">선물세트<br />Farm</a>
+          </li>
+          <li>
+            <a href="#">정기배송<br />Farm</a>
+          </li>
+        </ul>
+      </div>
       <!-- 상세페이지 -->
       <div class="detail-pg">
         <div class="inner">
@@ -191,61 +194,69 @@
           </div>
           <div class="product-review">
             <div class="review-pr">
-              <h1>상품후기</h1>
+              <h2>상품후기</h2>
               <div class="review-bt">
-                <button><i class="fas fa-pen" style="color: #b5b5b5;"></i> 글쓰기</button>
-                <button><i class="fas fa-comment" style="color: #b5b5b5;"></i> 전체보기</button>
+                <button>
+                  <i class="fas fa-pen" style="color: #b5b5b5"></i> 글쓰기
+                </button>
+                <button>
+                  <i class="fas fa-comment" style="color: #b5b5b5"></i> 전체보기
+                </button>
               </div>
+            </div>
             <div class="review-page">
               <p>등록된 상품후기가 없습니다.</p>
             </div>
-          
           </div>
           <div class="product-inquiry">
             <div class="inquiry">
-              <h1>상품문의</h1>
+              <h2>상품문의</h2>
               <div class="inquiry-bt">
-                <button><i class="fas fa-pen" style="color: #b5b5b5;"></i> 글쓰기</button>
-                <button><i class="fas fa-comment" style="color: #b5b5b5;"></i> 전체보기</button>
-              </div> 
-          <div class="inquiry-page">
-            <p>등록된 상품문의가 없습니다.</p>
-          </div>
-            
+                <button>
+                  <i class="fas fa-pen" style="color: #b5b5b5"></i> 글쓰기
+                </button>
+                <button>
+                  <i class="fas fa-comment" style="color: #b5b5b5"></i> 전체보기
+                </button>
+              </div>
+            </div>
+            <div class="inquiry-page">
+              <p>등록된 상품문의가 없습니다.</p>
+            </div>
           </div>
         </div>
       </div>
-     <!-- 하단 -->
-     <footer>
-      <div class="ft-left">
-        <img src="images/logo-2.png" alt="로고" />
-      </div>
-      <div class="ft-right">
-        <ul class="ft-right-top">
-          <li><a href="#">회사소개</a></li>
-          <li><a href="#">이용약관</a></li>
-          <li><a href="#">개인정보취급방침</a></li>
-          <li><a href="#">이용안내</a></li>
-        </ul>
-        <div class="ft-right-bottom">
-          <h4>고객센터 문의</h4>
-          <span
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              style="fill: rgb(0, 60, 0)"
+      <!-- 하단 -->
+      <footer>
+        <div class="ft-left">
+          <img src="images/logo-2.png" alt="로고" />
+        </div>
+        <div class="ft-right">
+          <ul class="ft-right-top">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보취급방침</a></li>
+            <li><a href="#">이용안내</a></li>
+          </ul>
+          <div class="ft-right-bottom">
+            <h4>고객센터 문의</h4>
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                style="fill: rgb(0, 60, 0)"
+              >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+                />
+              </svg>
+              1234-5678</span
             >
-              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-              <path
-                d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
-              />
-            </svg>
-            1234-5678</span
-          >
-          <p>평일 09:00 - 18:00 (토/일, 공휴일 휴무)</p>
+            <p>평일 09:00 - 18:00 (토/일, 공휴일 휴무)</p>
+          </div>
         </div>
-      </div>
-    </footer>
-  </div>
-</body>
+      </footer>
+    </div>
+  </body>
 </html>

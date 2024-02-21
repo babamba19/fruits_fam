@@ -1,13 +1,20 @@
 window.onload = function () {
   // top 버튼
-  document.getElementById("scroll");
-  
-    topBtn.addEventListener("click", function (event) {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
+  document.getElementById("scroll-to-top").addEventListener("click", function() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
     });
+  });
+  window.addEventListener("scroll", function() {
+    var scrollButton = document.getElementById("scroll-to-top-btn");
+    if (window.scrollY > 300) {
+      scrollButton.style.display = "block";
+    } else {
+      scrollButton.style.display = "none";
+    }
+  });
+
   // swiper
   var swiper = new Swiper(".sw-banner", {
     cssMode: true,
@@ -55,11 +62,12 @@ window.onload = function () {
       },
       768: {
         slidesPerView: 2,
-        spaceBetween: 10,
+        spaceBetween: 20,
       },
       800: {
         slidesPerView: 3,
         spaceBetween: 10,
       },
-  }});
+    },
+  });
 };
