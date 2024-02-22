@@ -41,7 +41,6 @@ h1 {
   bottom: 50px;
   right: 30px;
   z-index: 9999;
-  
 }
 .icon li {
   width: 70px;
@@ -602,42 +601,49 @@ header {
   margin-bottom: 20px;
 }
 .review {
-  width: 49%;
+  width: calc(100% / 2 - 10px);
   height: 50%;
   background-color: #fff;
   display: flex;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border-radius: 20px;
   cursor: pointer;
 }
 .review img {
   width: 40%;
   height: 40%;
-  padding: 10px;
+  padding: 30px;
 }
 .review-right {
-  line-height: 30px;
+  width: 60%;
+  padding: 30px 0;
 }
 
 .review-right h2 {
   font-family: "TheJamsil5Bold";
   letter-spacing: normal;
   font-size: 1.4rem;
-  margin-top: 20px;
+  margin-top: 0px;
+  color: #222;
 }
 .star {
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
   margin-top: 10px;
   margin-bottom: 17px;
 }
 .review-right span {
+  font-family: "Noto Sans KR", sans-serif;
   display: inline-block;
   font-weight: 500;
-  height: 50px;
+  /* height: 50px; */
+  color: #222;
 }
 .review-right .id {
-  margin-top: 17px;
+  margin-top: 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #808080;
 }
 .review-more {
   font-family: "TheJamsil3Regular";
