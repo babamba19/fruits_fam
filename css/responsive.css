@@ -6,58 +6,19 @@
 }
 @media screen and (max-width: 1300px) {
   /* 생생 후기 */
-  .reviewpage h1 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .reviewpage {
-    width: 100%;
-    height: 700px;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    background-color: rgb(236, 255, 224);
-  }
-  .review-right h2 {
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 250px;
-    height: 30px;
-    margin-top: 20px;
-  }
-  .review-right span {
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 250px;
-    height: 30px;
-  }
-  .review-more {
-    width: 200px;
-    height: 60px;
-    font-size: 20px;
-    margin-top: 20px;
+  .star {
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 1200px) {
-  .reviewpage {
-    width: 100%;
-    height: 700px;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    background-color: rgb(236, 255, 224);
+  /* 후기 */
+  .star {
+    font-size: 1rem;
   }
-  .review img {
-    width: 220px;
-    height: 220px;
-    padding: 10px;
+  .review-right .id {
+    font-size: 0.8rem;
   }
-  .review-right h2 {
-    font-size: 1.2rem;
-    margin-top: 10px;
-  }
+  /* 할인 */
   .sale-left .swiper-pagination {
     bottom: 34px;
   }
@@ -105,85 +66,25 @@
 }
 @media screen and (max-width: 1100px) {
   /* 생생 후기 */
-  .reviewpage h1 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .reviewpage {
-    width: 100%;
-    height: 650px;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    background-color: rgb(236, 255, 224);
-  }
-  .review {
-    width: 49%;
-    height: 200px;
-    background-color: #fff;
-    display: flex;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-  }
   .review img {
-    width: 200px;
-    height: 200px;
-    padding: 10px;
+    width: 40%;
+    padding: 20px;
+  }
+  .review-right {
+    padding: 20px 0;
   }
   .review-right h2 {
+    font-family: "TheJamsil4Medium";
     font-size: 1.2rem;
-    margin-top: 10px;
   }
-  .review-right span {
-    font-size: 1rem;
-    width: 200px;
-  }
-  .review-right .id {
-    margin-top: 0px;
-  }
-  .review-more {
-    width: 200px;
-    height: 60px;
-    font-size: 20px;
-    margin-top: 20px;
+  .star {
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 1050px) {
   /* 생생 후기 */
-  .review {
-    width: 49%;
-    height: 50%;
-    background-color: #fff;
-    display: flex;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-  }
-  .review img {
-    width: 200px;
-    height: 200px;
-    padding: 10px;
-  }
-  .review-right h2 {
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 200px;
-    height: 30px;
-    margin-top: 10px;
-  }
   .review-right span {
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 150px;
-    height: 30px;
-  }
-  .review-more {
-    width: 200px;
-    height: 60px;
-    font-size: 20px;
-    margin-top: 20px;
+    font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -274,38 +175,13 @@
 }
 @media screen and (max-width: 900px) {
   /* 생생 후기 */
-  .reviewpage h1 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  .star {
+    font-size: 0.9rem;
+    margin: 5px 0;
   }
-  .reviewpage {
-    width: 100%;
-    height: 650px;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    background-color: rgb(236, 255, 224);
-  }
-  .review-right h2 {
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 160px;
-    height: 30px;
-  }
-  .review-right span {
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 150px;
-    height: 30px;
-  }
-  .review-more {
-    width: 200px;
-    height: 60px;
-    font-size: 20px;
-    margin-top: 20px;
+  .review-right .id {
+    margin-top: 5px;
+    font-size: 0.7rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -354,7 +230,7 @@
     max-width: 200px;
   }
   .header-bottom {
-    /* height: 50px; */
+    height: 60px;
     margin: 40px 0 0 0;
   }
   .main-menu {
@@ -380,7 +256,7 @@
   .today-menu li a p {
     font-size: 1.2rem;
   }
-  .fa-check{
+  .fa-check {
     font-size: 50px;
     bottom: 50%;
     left: 31%;
@@ -395,7 +271,7 @@
   }
   /* 할인 */
   .sale .inner {
-    padding: 80px 0;
+    padding: 50px 0;
   }
   .sale-left p {
     font-size: 1.1rem;
@@ -484,6 +360,8 @@
     width: 200px;
     height: 60px;
     font-size: 20px;
+    margin: 0 auto;
+    margin-top: 70px;
   }
   /* 제철과일 */
   .new {
@@ -516,58 +394,46 @@
     width: 200px;
     height: 60px;
     font-size: 20px;
+    margin: 0 auto;
   }
-/* 생생 후기 */
+  /* 생생 후기 */
   .reviewpage {
-    width: 100%;
     height: 940px;
-    padding-top: 5px;
-    background-color: rgb(236, 255, 224);
+    margin-top: 150px;
   }
   .review-list {
     display: flex;
     flex-direction: column;
-    margin-bottom: 5px;
+    margin-bottom: 0;
+  }
+  .review-list li {
+    margin-bottom: 20px;
   }
   .review {
     width: 100%;
-    height: 180px;
-    background-color: #fff;
-    display: flex;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-bottom: 10px;
+    height: 150px;
+    padding: 20px;
   }
   .review img {
-    width: 180px;
-    height: 180px;
-    padding: 10px;
+    width: 30%;
+    height: 100%;
+    padding: 0;
   }
-  .review-right h2 {
-    width: 300px;
-    height: 30px;
-    margin-top: 10px;
+  .review-right {
+    width: 50%;
+    padding: 0 30px;
   }
   .star {
     font-size: 1rem;
-    font-weight: 500;
-    margin: 0px;
-  }
-  .review-right span {
-    width: 350px;
-    height: 25%;
-    font-size: 15px;
-    line-height: 25px;
+    margin: 10px 0;
   }
   .review-right .id {
-    height: 20px;
-    margin: 0px;
+    margin-top: 10px;
   }
   .review-more {
     width: 200px;
     height: 60px;
     font-size: 20px;
-    margin-top: 10px;
   }
   /* 브랜드스토리 */
   .brand_story {
@@ -585,7 +451,7 @@
   }
   /* 푸터 */
   .ft-left img {
-    max-width: 200px;
+    max-width: 150px;
   }
   .ft-right-top li a {
     font-size: 12px;
@@ -603,155 +469,24 @@
 }
 @media screen and (max-width: 480px) {
   /* 생생 후기 */
-  .reviewpage h1 {
-    margin-top: 20px;
-    margin-bottom: 15px;
-  }
-  .reviewpage {
-    width: 100%;
-    height: 940px;
-    padding-top: 5px;
-    background-color: rgb(236, 255, 224);
-  }
-  .review-list {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5px;
-  }
-  .review {
-    width: 100%;
-    height: 180px;
-    background-color: #fff;
-    display: flex;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-  .review img {
-    width: 180px;
-    height: 100%;
-    padding: 10px;
+  .review-right {
+    width: 70%;
+    padding: 5px 20px;
   }
   .review-right h2 {
-    width: 220px;
-    height: 30px;
-    margin-top: 10px;
-  }
-  .review-right span {
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 200px;
-    height: 25%;
-    font-size: 15px;
-    line-height: 20px;
-  }
-  .review-right .id {
-    height: 20px;
-    margin: 0px;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 420px) {
   /* 생생 후기 */
-  .reviewpage h1 {
-    margin-top: 20px;
-    margin-bottom: 15px;
-  }
-  .reviewpage {
-    width: 100%;
-    height: 500px;
-    padding-top:5px;
-    padding-bottom: 50px;
-    background-color: rgb(236, 255, 224);
-  }
-  .review {
-    width: 100%;
-    height: 150px;
-    background-color: #fff;
-    display: flex;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-  }
-  .review:nth-child(2){
+  .review:nth-child(2) {
     display: none;
   }
   .review img {
-    width: 150px;
-    height: 150px;
-    padding: 10px;
+    width: 40%;
   }
   .review-right {
-    line-height: 30px;
-  }
-  .review-right h2 {
-    font-size: 18px;
-    height: 22px;
-    font-weight: 700;
-    margin-top: 10px;
-  }
-  .star {
-    font-size: 15px;
-    font-weight: 500;
-    height: 20px;
-    margin-bottom: 10px;
-  }
-  .review-right span {
-    font-size: 15px;
-    display: inline-block;
-    font-weight: 500;
-    height: 45px;
-  }
-  .review-right .id {
-    display: none;
-  }
-}
-@media screen and (max-width: 390px) {
-  /* 생생 후기 */
-  .reviewpage h1 {
-    margin-top: 0;
-    margin-bottom: 15px;
-  }
-  .reviewpage {
-    width: 100%;
-    height: 500px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: rgb(236, 255, 224);
-  }
-  .review img {
-    width: 150px;
-    height: 150px;
-    padding: 10px;
-  }
-  .review-right {
-    line-height: 30px;
-  }
-  .review-right h2 {
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-size: 14px;
-    font-weight: 700;
-    margin-top: 10px;
-    width: 155px;
-  }
-  .star {
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 0px;
-    margin-bottom: 10px;
-  }
-  .review-right span {
-    font-size: 14px;
-    display: inline-block;
-    font-weight: 500;
-    height: 50px;
-    width: 160px;
-  }
-  .review-right .id {
-    font-size: 10px;
+    padding-right: 0;
   }
 }
 @media screen and (max-width: 320px) {
@@ -826,7 +561,7 @@
     font-size: 10px;
     margin-top: 15px;
   }
-  .fa-check{
+  .fa-check {
     font-size: 25px;
     bottom: 50%;
     left: 30%;
@@ -939,7 +674,7 @@
     width: calc(100% / 2 - 5px);
     margin-bottom: 10px;
   }
-  .best-fruits li:last-child{
+  .best-fruits li:last-child {
     display: none;
   }
   .best-img img:first-child {
@@ -996,7 +731,7 @@
     width: calc(100% / 3 - 5px);
     margin-bottom: 10px;
   }
-  .new-fruits li:last-child{
+  .new-fruits li:last-child {
     display: none;
   }
   .new-img img:first-child {
@@ -1035,58 +770,37 @@
     margin: 30px auto 0;
   }
   /* 생생 후기 */
+  .reviewpage {
+    height: 380px;
+  }
   .reviewpage h1 {
     margin-top: 0;
     margin-bottom: 15px;
   }
-  .reviewpage {
-    margin-top: 20px;
-    width: 100%;
-    height: 360px;
-    padding: 20px 0;
-    background-color: rgb(236, 255, 224);
+  .review-list li {
+    margin-bottom: 10px;
   }
-  .review-page .inner {
-    padding: 20px 0;
-  }
-  .review-list {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5px;
+  .review-list h2 {
+    font-size: 0.9rem;
   }
   .review {
-    width: 100%;
-    height: 110px;
-    background-color: #fff;
-    display: flex;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-bottom: 10px;
+    height: 100px;
+    padding: 15px;
   }
-  .review img {
-    width: 110px;
-    height: 110px;
-    padding: 10px;
-  }
-  .review-right h2 {
-    width: 200px;
-    height: 22px;
-    margin-top: 0px;
+  .review-right {
+    width: 80%;
+    padding: 0;
+    padding-left: 10px;
   }
   .star {
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 0px;
-    margin-bottom: 10px;
+    font-size: 0.7rem;
+    margin: 5px 0;
   }
-.review-right span {
-    width: 180px;
-    height: 50px;
-    font-size: 12px;
+  .review-right span {
+    font-size: 0.75rem;
   }
   .review-right .id {
-    height: 20px;
-    margin: 0px;
+    margin-top: 5px;
   }
   .review-more {
     width: 80px;
@@ -1094,7 +808,7 @@
     font-size: 13px;
     border-radius: 15px;
     border: 2px solid;
-    margin: 10px auto 0;
+    margin: 30px auto 0;
   }
   /* 브랜드 스토리 */
   .brand_story {
