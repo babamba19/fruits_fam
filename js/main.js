@@ -1,28 +1,33 @@
 window.onload = function () {
-//   // 모달 열기
-// function openModal() {
-//   document.getElementById('popup').style.display = 'block';
-//   document.body.style.overflow = 'hidden';
-// }
-// // 모달 닫기
-// function closeModal() {
-//   document.getElementById('popup').style.display = 'none';
-//   document.body.style.overflow = 'auto';
-// }
+  //   // 모달 열기
+  // function openModal() {
+  //   document.getElementById('popup').style.display = 'block';
+  //   document.body.style.overflow = 'hidden';
+  // }
+  // // 모달 닫기
+  // function closeModal() {
+  //   document.getElementById('popup').style.display = 'none';
+  //   document.body.style.overflow = 'auto';
+  // }
   // 닫기 버튼을 클릭하면 모달을 닫는 함수
   document.getElementById("close").addEventListener("click", function () {
     document.getElementById("popup").style.display = "none";
   });
 
   // top 버튼
-  document
-    .getElementById("scroll-to-top")
-    .addEventListener("click", function () {
+  document.getElementById("scroll-to-top").addEventListener("click", function() {
+    if (window.scrollY == 0) {
+      window.scrollTo({
+        top: 5000,
+        behavior: "smooth",
+      });
+    } else {
       window.scrollTo({
         top: 0,
         behavior: "smooth",
       });
-    });
+    }
+  });
   window.addEventListener("scroll", function () {
     var scrollButton = document.getElementById("scroll-to-top-btn");
     if (window.scrollY > 300) {
@@ -32,16 +37,15 @@ window.onload = function () {
     }
   });
 
-
-// 화살표 이미지 회전
-const topBtnImg = document.getElementById("scroll-to-top");
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 0) {
-    topBtnImg.classList.add("up");
-  } else {
-    topBtnImg.classList.remove("up");
-  }
-});
+  // 화살표 이미지 회전
+  const topBtnImg = document.getElementById("scroll-to-top");
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 0) {
+      topBtnImg.classList.add("up");
+    } else {
+      topBtnImg.classList.remove("up");
+    }
+  });
   // swiper
   var swiper = new Swiper(".sw-banner", {
     cssMode: true,
