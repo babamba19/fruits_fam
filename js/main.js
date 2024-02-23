@@ -1,20 +1,37 @@
 window.onload = function () {
-  // top 버튼
-  document.getElementById("scroll-to-top").addEventListener("click", function() {
+// top 버튼
+document.getElementById("scroll-to-top").addEventListener("click", function() {
+  if (window.scrollY == 0) {
+    window.scrollTo({
+      top: 5000,
+      behavior: "smooth",
+    });
+  } else {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
-  });
-  window.addEventListener("scroll", function() {
-    var scrollButton = document.getElementById("scroll-to-top-btn");
-    if (window.scrollY > 300) {
-      scrollButton.style.display = "block";
-    } else {
-      scrollButton.style.display = "none";
-    }
-  });
+  }
+});
 
+window.addEventListener("scroll", function() {
+  var scrollButton = document.getElementById("scroll-to-top-btn");
+  if (window.scrollY > 300) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+});
+
+// 화살표 이미지 회전
+const topBtnImg = document.getElementById("scroll-to-top");
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 0) {
+    topBtnImg.classList.add("up");
+  } else {
+    topBtnImg.classList.remove("up");
+  }
+});
   // swiper
   var swiper = new Swiper(".sw-banner", {
     cssMode: true,
