@@ -32,6 +32,16 @@ window.onload = function () {
     }
   });
 
+
+// 화살표 이미지 회전
+const topBtnImg = document.getElementById("scroll-to-top");
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 0) {
+    topBtnImg.classList.add("up");
+  } else {
+    topBtnImg.classList.remove("up");
+  }
+});
   // swiper
   var swiper = new Swiper(".sw-banner", {
     cssMode: true,
