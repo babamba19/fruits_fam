@@ -149,6 +149,10 @@
   .new-price p:nth-child(3) {
     font-size: 0.8rem;
   }
+  /* 생생 후기 */
+  .reviewpage {
+    height: 670px;
+  }
   /* 브랜드스토리 */
   .brand_story p a {
     left: 45.7%;
@@ -434,6 +438,7 @@
     width: 200px;
     height: 60px;
     font-size: 20px;
+    margin: 50px auto;
   }
   /* 브랜드스토리 */
   .brand_story {
@@ -528,7 +533,7 @@
   }
   .header-bottom {
     margin: 18px 0 0 0;
-    height: 30px;
+    height: 20px;
   }
   .main-menu {
     font-family: "TheJamsil1Thin";
@@ -772,6 +777,7 @@
   /* 생생 후기 */
   .reviewpage {
     height: 380px;
+    margin-top: 100px;
   }
   .reviewpage h1 {
     margin-top: 0;
