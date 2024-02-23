@@ -57,6 +57,7 @@ h1 {
   font-size: 28px;
   color: #555;
 }
+
 .fa-arrow-up{
   transform: rotate(-180deg);
   transition: transform 0.3s ease;
@@ -64,6 +65,37 @@ h1 {
 .up {
   transform: rotate(1deg); /* 원하는 각도로 회전시킵니다. */
   transition: transform 0.3s ease; /* 회전 효과에 애니메이션을 추가합니다. */
+
+/* 모달 팝업 */
+.popup-wrap {
+  background-color: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  z-index: 9999999999;
+}
+.popup-body img {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 10px 10px 1px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.popup-foot {
+  line-height: 25px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  letter-spacing: 1.5;
+  text-decoration: underline;
+
 }
 /* 태훈 */
 /* header */
