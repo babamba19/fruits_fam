@@ -1,12 +1,29 @@
 window.onload = function () {
-  // top 버튼
-  document.getElementById("scroll-to-top").addEventListener("click", function() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
+//   // 모달 열기
+// function openModal() {
+//   document.getElementById('popup').style.display = 'block';
+//   document.body.style.overflow = 'hidden';
+// }
+// // 모달 닫기
+// function closeModal() {
+//   document.getElementById('popup').style.display = 'none';
+//   document.body.style.overflow = 'auto';
+// }
+  // 닫기 버튼을 클릭하면 모달을 닫는 함수
+  document.getElementById("close").addEventListener("click", function () {
+    document.getElementById("popup").style.display = "none";
   });
-  window.addEventListener("scroll", function() {
+
+  // top 버튼
+  document
+    .getElementById("scroll-to-top")
+    .addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+  window.addEventListener("scroll", function () {
     var scrollButton = document.getElementById("scroll-to-top-btn");
     if (window.scrollY > 300) {
       scrollButton.style.display = "block";
